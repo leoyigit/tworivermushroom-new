@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Meet the Team · Two River Gourmet Mushroom</title>
+<meta name="description" content="The small crew of growers and market folks behind Two River Gourmet Mushroom.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,400;0,500;0,600;1,400&family=Hanken+Grotesk:wght@400;500;600;700&family=Spline+Sans+Mono:wght@500;600&display=swap" rel="stylesheet">
+<link rel="icon" type="image/png" href="https://www.tworivermushroom.com/cdn/shop/files/Two_River_Mushroom_Logo.png?height=64&v=1704324073">
+<link rel="stylesheet" href="assets/site.css">
+</head>
+<body data-page="team">
+<div id="site-header"></div>
+
+<main>
+  <section class="pagehead">
+    <div class="wrap inner">
+      <div class="eyebrow">Meet the team</div>
+      <h1>The people behind the mushrooms</h1>
+      <p>A small crew of growers and market folks who care a lot about doing this the slow, organic way.</p>
+    </div>
+  </section>
+
+  <section style="max-width:900px;margin:0 auto;padding:56px 28px 24px">
+    <div style="background:var(--paper);border:1px solid var(--line2);border-radius:20px;overflow:hidden;display:grid;grid-template-columns:auto 1fr;align-items:stretch">
+      <div style="width:220px;background:linear-gradient(135deg,#e3d4b6,#d2bf99);display:flex;align-items:center;justify-content:center;font-family:var(--serif);font-size:56px;color:#6b5a3e">KC</div>
+      <div style="padding:36px">
+        <div class="eyebrow" style="color:var(--terra);margin-bottom:10px;font-size:11px">Founder</div>
+        <h2 style="font-size:30px;margin:0 0 12px">KC Sullivan</h2>
+        <p style="font-size:16px;line-height:1.7;color:var(--muted)">KC started Two River with a simple belief — that New Jersey deserved its own organic, gourmet mushrooms. What began as a few fruiting blocks is now the state’s first organic mushroom farm, supplying dozens of restaurants and markets.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="wrap" style="padding:24px 28px 80px">
+    <div class="grid grid-3" id="teamGrid"></div>
+  </section>
+</main>
+
+<div id="site-footer"></div>
+
+<script src="assets/data.js"></script>
+<script>
+  window.TRMpageInit = function(){
+    document.getElementById('teamGrid').innerHTML = TRM.TEAM.map(t =>
+      `<div class="card" style="cursor:default">
+        <div style="aspect-ratio:4/3;background:linear-gradient(135deg,#e3d4b6,#d2bf99);display:flex;align-items:center;justify-content:center;font-family:var(--serif);font-size:40px;color:#6b5a3e">${t.initials}</div>
+        <div class="card-body"><div class="card-cat">${t.role}</div><div style="font-family:var(--serif);font-size:20px">${t.name}</div></div>
+      </div>`).join('');
+  };
+</script>
+<script src="assets/site.js"></script>
+</body>
+</html>

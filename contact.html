@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Contact · Two River Gourmet Mushroom</title>
+<meta name="description" content="Questions about wholesale, pick-up, or just want to talk mushrooms? Contact Two River Gourmet Mushroom in Millstone, NJ.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,400;0,500;0,600;1,400&family=Hanken+Grotesk:wght@400;500;600;700&family=Spline+Sans+Mono:wght@500;600&display=swap" rel="stylesheet">
+<link rel="icon" type="image/png" href="https://www.tworivermushroom.com/cdn/shop/files/Two_River_Mushroom_Logo.png?height=64&v=1704324073">
+<link rel="stylesheet" href="assets/site.css">
+</head>
+<body data-page="contact">
+<div id="site-header"></div>
+
+<main>
+  <section class="pagehead">
+    <div class="wrap inner">
+      <div class="eyebrow">Contact us</div>
+      <h1>Say hello</h1>
+      <p>Questions about wholesale, pick-up, or just want to talk mushrooms? Drop us a line.</p>
+    </div>
+  </section>
+
+  <section class="wrap split" style="padding:56px 28px 80px;gap:48px;align-items:start">
+    <div id="formWrap">
+      <form class="form-card" id="contactForm" novalidate>
+        <div class="field"><label for="cName">Name</label><input id="cName" name="name" placeholder="Your name" required></div>
+        <div class="field"><label for="cEmail">Email</label><input id="cEmail" name="email" type="email" placeholder="you@email.com" required></div>
+        <div class="field"><label for="cMsg">Message</label><textarea id="cMsg" name="message" rows="5" placeholder="How can we help?" required></textarea></div>
+        <div id="formErr" style="color:var(--terra);font-size:13px;margin-bottom:12px;display:none"></div>
+        <button type="submit" class="btn btn-terra" style="width:100%;justify-content:center">Send message</button>
+      </form>
+    </div>
+    <div class="contact-info">
+      <div class="eyebrow">Farm details</div>
+      <div class="blk"><h4>Address</h4>Mighty Dare Farm<br>145 Stillhouse Road<br>Millstone, NJ 08510</div>
+      <div class="blk"><h4>Hours</h4>Mon–Sat · 10AM–4PM<br>Sunday · Closed</div>
+      <div class="blk"><h4>Phone</h4><a href="tel:+17322161859">(732) 216-1859</a></div>
+      <div class="blk" style="margin-bottom:0"><h4>Email</h4><a href="mailto:tworivergourmetmushrooms@gmail.com" style="word-break:break-all">tworivergourmetmushrooms@gmail.com</a></div>
+    </div>
+  </section>
+</main>
+
+<div id="site-footer"></div>
+
+<script src="assets/data.js"></script>
+<script>
+  window.TRMpageInit = function(){
+    const form = document.getElementById('contactForm');
+    form.addEventListener('submit', function(e){
+      e.preventDefault();
+      const name = document.getElementById('cName').value.trim();
+      const email = document.getElementById('cEmail').value.trim();
+      const msg = document.getElementById('cMsg').value.trim();
+      const err = document.getElementById('formErr');
+      if(!name || !email || !msg){ err.textContent = 'Please fill in every field.'; err.style.display='block'; return; }
+      if(!/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(email)){ err.textContent = 'Please enter a valid email address.'; err.style.display='block'; return; }
+      document.getElementById('formWrap').innerHTML =
+        `<div class="sent">
+          <div class="check"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.4"><path d="M20 6L9 17l-5-5"/></svg></div>
+          <h3 style="font-size:26px;margin:0 0 10px">Thanks — message sent!</h3>
+          <p style="font-size:15px;color:var(--muted);margin:0">We’ll get back to you within a day or two.</p>
+        </div>`;
+    });
+  };
+</script>
+<script src="assets/site.js"></script>
+</body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>In the Media · Two River Gourmet Mushroom</title>
+<meta name="description" content="Awards and coverage Two River Gourmet Mushroom has picked up — including the 2023 sofi™ Gold Award.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,400;0,500;0,600;1,400&family=Hanken+Grotesk:wght@400;500;600;700&family=Spline+Sans+Mono:wght@500;600&display=swap" rel="stylesheet">
+<link rel="icon" type="image/png" href="https://www.tworivermushroom.com/cdn/shop/files/Two_River_Mushroom_Logo.png?height=64&v=1704324073">
+<link rel="stylesheet" href="assets/site.css">
+</head>
+<body data-page="media">
+<div id="site-header"></div>
+
+<main>
+  <section class="pagehead">
+    <div class="wrap inner">
+      <div class="eyebrow">In the media</div>
+      <h1>Don’t just take it from us</h1>
+      <p>A look at the awards and coverage Two River has picked up along the way.</p>
+    </div>
+  </section>
+
+  <section class="wrap" style="padding:56px 28px 28px">
+    <div style="background:var(--dark3);border-radius:20px;padding:48px;display:grid;grid-template-columns:auto 1fr;gap:40px;align-items:center">
+      <div style="width:120px;height:120px;border-radius:50%;background:var(--gold);color:var(--dark);display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;flex:none">
+        <div style="font-family:var(--serif);font-size:30px">sofi</div>
+        <div style="font:600 9px var(--mono);letter-spacing:.1em">GOLD 2023</div>
+      </div>
+      <div>
+        <div class="eyebrow" style="color:var(--peach);margin-bottom:10px;font-size:11px">Specialty Food Association</div>
+        <h2 style="font-size:32px;line-height:1.1;color:#f4ecdc;margin:0 0 12px">2023 sofi™ Gold Award Winner</h2>
+        <p style="color:#c9bba2;font-size:16px;line-height:1.6;max-width:560px">Our Mushroom Broth took home the food industry’s top honour — the sofi™ Gold — recognising the best new specialty products in the country.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="wrap" style="padding:8px 28px 80px">
+    <div class="grid grid-3" id="mediaGrid"></div>
+  </section>
+</main>
+
+<div id="site-footer"></div>
+
+<script src="assets/data.js"></script>
+<script>
+  window.TRMpageInit = function(){
+    document.getElementById('mediaGrid').innerHTML = TRM.MEDIA.map(m =>
+      `<div class="fact"><div class="eyebrow" style="color:var(--soft)">${m.outlet}</div>
+        <p style="font-size:18px;margin:0 0 auto">“${m.quote}”</p>
+        <div style="font:500 11px var(--mono);letter-spacing:.1em;color:var(--soft);margin-top:16px">${m.date}</div></div>`).join('');
+  };
+</script>
+<script src="assets/site.js"></script>
+</body>
+</html>

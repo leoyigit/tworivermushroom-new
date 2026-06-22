@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Mushroom Recipes · Two River Gourmet Mushroom</title>
+<meta name="description" content="Mushroom recipes from Two River — Lion's Mane crab cakes, cream of mushroom soup, roasted maitake and more.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,400;0,500;0,600;1,400&family=Hanken+Grotesk:wght@400;500;600;700&family=Spline+Sans+Mono:wght@500;600&display=swap" rel="stylesheet">
+<link rel="icon" type="image/png" href="https://www.tworivermushroom.com/cdn/shop/files/Two_River_Mushroom_Logo.png?height=64&v=1704324073">
+<link rel="stylesheet" href="assets/site.css">
+</head>
+<body data-page="recipes">
+<div id="site-header"></div>
+
+<main class="wrap" style="padding:56px 28px 80px">
+  <div class="eyebrow" style="color:var(--terra);margin-bottom:14px">Cook with us</div>
+  <h1 style="font-size:52px;line-height:1;margin:0 0 14px">Mushroom recipes</h1>
+  <p style="font-size:17px;line-height:1.6;color:var(--muted);max-width:520px;margin:0 0 44px">From farm to fork — ideas for breakfast, lunch and dinner, for vegetarians and meat eaters alike.</p>
+  <div class="grid grid-2" id="recipeGrid"></div>
+</main>
+
+<div id="site-footer"></div>
+
+<script src="assets/data.js"></script>
+<script>
+  window.TRMpageInit = function(){
+    document.getElementById('recipeGrid').innerHTML = TRM.RECIPES.map(r =>
+      `<article class="recipe-card">
+        <div class="media"><img src="${r.img}" alt="${r.title}" loading="lazy"></div>
+        <div class="body">
+          <div class="recipe-meta"><span>${r.time}</span><span class="lvl">${r.level}</span></div>
+          <h3>${r.title}</h3>
+          <p>${r.blurb}</p>
+        </div>
+      </article>`).join('');
+  };
+</script>
+<script src="assets/site.js"></script>
+</body>
+</html>

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Two River Gourmet Mushroom · USDA Organic Mushrooms in Millstone, NJ</title>
+<meta name="description" content="New Jersey's first USDA Organic mushroom farm. Fresh gourmet mushrooms, award-winning mushroom broth, and farm pick-up in Millstone, NJ.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,400;0,500;0,600;1,400&family=Hanken+Grotesk:wght@400;500;600;700&family=Spline+Sans+Mono:wght@500;600&display=swap" rel="stylesheet">
+<link rel="icon" type="image/png" href="https://www.tworivermushroom.com/cdn/shop/files/Two_River_Mushroom_Logo.png?height=64&v=1704324073">
+<link rel="stylesheet" href="assets/site.css">
+</head>
+<body data-page="home">
+<div id="site-header"></div>
+
+<main>
+  <!-- HERO -->
+  <section class="hero">
+    <img class="hero-img" src="https://www.tworivermushroom.com/cdn/shop/files/organic_mushrooms.jpg?width=1600&v=1719253562" alt="A harvest of fresh organic gourmet mushrooms">
+    <div class="hero-shade"></div>
+    <div class="wrap hero-inner">
+      <div class="eyebrow">Mighty Dare Farm · Millstone, NJ</div>
+      <h1>For those who desire only the finest.</h1>
+      <div class="hero-actions">
+        <a class="btn btn-peach" href="shop.html">Enter the shop</a>
+        <span>New Jersey’s first organic mushroom farm. Grown on a 25-acre preserve, sold to 40+ of the state’s finest restaurants.</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- FEATURED -->
+  <section class="wrap section" style="padding-bottom:16px">
+    <div class="section-head">
+      <div>
+        <div class="eyebrow">Shop our ‘shrooms</div>
+        <h2>Find your flavor</h2>
+      </div>
+      <a class="link-arrow" href="shop.html">Shop all
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+    </div>
+    <div class="grid grid-3" id="featuredGrid"></div>
+  </section>
+
+  <!-- BROTH BAND -->
+  <section class="wrap" style="margin-top:64px">
+    <div class="band">
+      <div class="band-text">
+        <div class="pill">★ 2023 sofi™ Gold Winner</div>
+        <h2>Two River<br>Mushroom Broth</h2>
+        <p>Organic Lion’s Mane, Shiitake, and 20 other clean, simple ingredients. Perfect for sipping, soups, and stock — and it ships free.</p>
+        <a class="btn btn-peach" href="broth.html">Discover the broth</a>
+      </div>
+      <div class="band-img"><img src="https://cdn.shopify.com/s/files/1/0634/0906/2084/files/tworiverbroth-8374_1.jpg?width=1200&v=1704327414" alt="Two River Mushroom Broth"></div>
+    </div>
+  </section>
+
+  <!-- STORY -->
+  <section class="wrap section split">
+    <div class="media-rounded"><img src="https://cdn.shopify.com/s/files/1/0634/0906/2084/files/IMG_3448.jpg?width=900&v=1716421280" alt="Mighty Dare Farm in Millstone, NJ"></div>
+    <div>
+      <div class="eyebrow">From farm to fork</div>
+      <h2>Locally owned &amp; operated</h2>
+      <p>Our mushrooms are grown on Mighty Dare Farm — a 25-acre parcel of preserved farmland in historic Millstone, N.J. We’re the only USDA Organic mushroom farm in the state growing this range of specialty strains.</p>
+      <div class="stats">
+        <div><div class="stat-num">40+</div><div class="stat-lbl">restaurants &amp; markets</div></div>
+        <div><div class="stat-num">25</div><div class="stat-lbl">preserved acres</div></div>
+        <div><div class="stat-num">1st</div><div class="stat-lbl">organic in NJ</div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- REVIEWS -->
+  <section class="reviews">
+    <div class="wrap">
+      <h2>Loved by chefs &amp; home cooks</h2>
+      <div class="grid grid-3" id="reviewGrid"></div>
+    </div>
+  </section>
+
+  <!-- RECIPES TEASER -->
+  <section class="wrap section split">
+    <div class="media-rounded" style="aspect-ratio:3/2"><img src="https://www.tworivermushroom.com/cdn/shop/files/organic_mushroom_recipe.jpg?width=900&v=1719253586" alt="Mushroom recipe"></div>
+    <div>
+      <div class="eyebrow" style="color:var(--terra)">Cook with us</div>
+      <h2>Recipes for breakfast, lunch &amp; dinner</h2>
+      <p>From Lion’s Mane “crab” cakes to a silky cream of mushroom soup — ideas for vegetarians and meat eaters alike.</p>
+      <a class="btn btn-ghost" href="recipes.html">Explore recipes</a>
+    </div>
+  </section>
+
+  <section class="wrap center" style="padding:32px 28px 80px">
+    <a href="locations.html" class="eyebrow" style="color:var(--soft);display:inline-block;margin-bottom:22px">Served &amp; sold at 40+ NJ restaurants &amp; retailers →</a>
+  </section>
+</main>
+
+<div id="site-footer"></div>
+
+<script src="assets/data.js"></script>
+<script>
+  window.TRMpageInit = function(){
+    document.getElementById('featuredGrid').innerHTML =
+      TRM.PRODUCTS.slice(0,6).map(TRMcard).join('');
+    document.getElementById('reviewGrid').innerHTML = TRM.REVIEWS.map(r =>
+      `<div class="review"><div class="stars">★★★★★</div><p>“${r.text}”</p><div class="review-name">— ${r.name}</div></div>`).join('');
+  };
+</script>
+<script src="assets/site.js"></script>
+</body>
+</html>

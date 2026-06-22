@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>‘Shroom Fun Facts · Two River Gourmet Mushroom</title>
+<meta name="description" content="Fungi are stranger than fiction — a few favourite facts about the most underrated kingdom of life.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,400;0,500;0,600;1,400&family=Hanken+Grotesk:wght@400;500;600;700&family=Spline+Sans+Mono:wght@500;600&display=swap" rel="stylesheet">
+<link rel="icon" type="image/png" href="https://www.tworivermushroom.com/cdn/shop/files/Two_River_Mushroom_Logo.png?height=64&v=1704324073">
+<link rel="stylesheet" href="assets/site.css">
+</head>
+<body data-page="facts">
+<div id="site-header"></div>
+
+<main>
+  <section class="pagehead">
+    <div class="wrap inner">
+      <div class="eyebrow">‘Shroom fun facts</div>
+      <h1>Fungi are stranger than fiction</h1>
+      <p>A few of our favourite things about the most underrated kingdom of life.</p>
+    </div>
+  </section>
+
+  <section class="wrap" style="padding:56px 28px 80px">
+    <div class="grid grid-3" id="factGrid"></div>
+  </section>
+</main>
+
+<div id="site-footer"></div>
+
+<script src="assets/data.js"></script>
+<script>
+  window.TRMpageInit = function(){
+    document.getElementById('factGrid').innerHTML = TRM.FACTS.map(f =>
+      `<div class="fact"><div class="eyebrow">${f.tag}</div><p>${f.fact}</p></div>`).join('');
+  };
+</script>
+<script src="assets/site.js"></script>
+</body>
+</html>

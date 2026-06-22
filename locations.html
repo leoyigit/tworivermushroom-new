@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Locations &amp; Partners · Two River Gourmet Mushroom</title>
+<meta name="description" content="Pick up at Mighty Dare Farm in Millstone, NJ, or find Two River on menus and shelves at 40+ spots across New Jersey.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,400;0,500;0,600;1,400&family=Hanken+Grotesk:wght@400;500;600;700&family=Spline+Sans+Mono:wght@500;600&display=swap" rel="stylesheet">
+<link rel="icon" type="image/png" href="https://www.tworivermushroom.com/cdn/shop/files/Two_River_Mushroom_Logo.png?height=64&v=1704324073">
+<link rel="stylesheet" href="assets/site.css">
+</head>
+<body data-page="locations">
+<div id="site-header"></div>
+
+<main>
+  <section class="pagehead">
+    <div class="wrap inner">
+      <div class="eyebrow">Locations &amp; partners</div>
+      <h1>Where to find us</h1>
+      <p>Pick up at the farm, or look for Two River on menus and shelves at 40+ spots across New Jersey.</p>
+    </div>
+  </section>
+
+  <section class="wrap split" style="padding:56px 28px 24px;gap:24px;align-items:stretch">
+    <div class="map-box">
+      <iframe title="Mighty Dare Farm map" loading="lazy" allowfullscreen
+        src="https://www.google.com/maps?q=145+Stillhouse+Road+Millstone+NJ+08510&output=embed"></iframe>
+    </div>
+    <div class="info-card">
+      <div class="eyebrow" style="color:var(--terra);margin-bottom:12px;font-size:11px">Visit the farm</div>
+      <h2 style="font-size:30px;line-height:1.1;margin:0 0 14px">Mighty Dare Farm</h2>
+      <p style="font-size:16px;line-height:1.8;color:var(--muted);margin:0 0 18px">145 Stillhouse Road<br>Millstone, NJ 08510<br>(732) 216-1859</p>
+      <p style="font:600 14px var(--sans);color:var(--ink2);margin:0 0 24px">Monday – Saturday · 10AM–4PM<br><span style="color:var(--soft);font-weight:500">Sunday · Closed</span></p>
+      <a class="btn btn-dark" style="align-self:flex-start" href="https://maps.google.com/?daddr=145+Stillhouse+Road+Millstone+NJ+08510" target="_blank" rel="noopener">Get directions</a>
+    </div>
+  </section>
+
+  <section class="wrap" style="padding:32px 28px 80px">
+    <h2 style="font-size:30px;margin:0 0 6px;text-align:center">Retail &amp; restaurant partners</h2>
+    <p style="text-align:center;color:var(--soft);font-size:15px;margin:0 0 32px">Our mushrooms are served and sold across the Garden State.</p>
+    <div class="grid grid-2" id="partnerGrid"></div>
+  </section>
+</main>
+
+<div id="site-footer"></div>
+
+<script src="assets/data.js"></script>
+<script>
+  window.TRMpageInit = function(){
+    document.getElementById('partnerGrid').innerHTML = TRM.PARTNERS.map(c =>
+      `<div class="partner-card">
+        <div><div style="font-family:var(--serif);font-size:22px;margin-bottom:4px">${c.label}</div>
+        <div style="font-size:14px;color:var(--soft)">${c.desc}</div></div>
+        <div style="font-family:var(--serif);font-size:34px;color:var(--terra);flex:none">${c.count}</div>
+      </div>`).join('');
+  };
+</script>
+<script src="assets/site.js"></script>
+</body>
+</html>

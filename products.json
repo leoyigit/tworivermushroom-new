@@ -1,0 +1,1350 @@
+{
+  "products": [
+    {
+      "id": 8502424535236,
+      "title": "Mushroom Broth Mixed Pack (6 Pack with Free Shipping)",
+      "handle": "mushroom-broth-mixed-pack-6-pack-with-free-shipping",
+      "body_html": "<p>Try all three flavors of our mushroom broth: Lions Mane, Chaga, and Maitake in our mushroom broth mixed pack. </p>\n<p>Each broth is packed full of organic mushrooms, simple, and clean ingredients, perfect for sipping, soup, or stock. Our mixed pack includes two boxes of each broth flavor. </p>\n<p>Free shipping or pick up at the barn! </p>",
+      "published_at": "2026-02-13T20:03:24-05:00",
+      "created_at": "2026-02-13T20:03:23-05:00",
+      "updated_at": "2026-06-19T08:35:15-04:00",
+      "vendor": "Two River Gourmet Mushroom",
+      "product_type": "",
+      "tags": [],
+      "variants": [
+        {
+          "id": 45761746665668,
+          "title": "Default Title",
+          "option1": "Default Title",
+          "option2": null,
+          "option3": null,
+          "sku": null,
+          "requires_shipping": true,
+          "taxable": true,
+          "featured_image": null,
+          "available": true,
+          "price": "49.00",
+          "grams": 3629,
+          "compare_at_price": null,
+          "position": 1,
+          "product_id": 8502424535236,
+          "created_at": "2026-02-13T20:03:23-05:00",
+          "updated_at": "2026-06-19T08:35:15-04:00"
+        }
+      ],
+      "images": [
+        {
+          "id": 48015052406980,
+          "created_at": "2026-02-13T20:21:49-05:00",
+          "position": 1,
+          "updated_at": "2026-02-13T20:21:57-05:00",
+          "product_id": 8502424535236,
+          "variant_ids": [],
+          "src": "https://cdn.shopify.com/s/files/1/0634/0906/2084/files/TwoRiver-Edited-03.jpg?v=1771032117",
+          "width": 2605,
+          "height": 1739
+        },
+        {
+          "id": 47579107983556,
+          "created_at": "2026-01-07T20:53:25-05:00",
+          "position": 2,
+          "updated_at": "2026-02-13T20:21:57-05:00",
+          "product_id": 8502424535236,
+          "variant_ids": [],
+          "src": "https://cdn.shopify.com/s/files/1/0634/0906/2084/files/MaitakeFrontView.png?v=1771032117",
+          "width": 4000,
+          "height": 5000
+        },
+        {
+          "id": 47080671641796,
+          "created_at": "2025-11-23T20:01:58-05:00",
+          "position": 3,
+          "updated_at": "2026-02-13T20:21:57-05:00",
+          "product_id": 8502424535236,
+          "variant_ids": [],
+          "src": "https://cdn.shopify.com/s/files/1/0634/0906/2084/files/Chagafront.jpg?v=1771032117",
+          "width": 2800,
+          "height": 3500
+        },
+        {
+          "id": 47080987689156,
+          "created_at": "2025-11-23T20:19:39-05:00",
+          "position": 4,
+          "updated_at": "2026-02-13T20:21:57-05:00",
+          "product_id": 8502424535236,
+          "variant_ids": [],
+          "src": "https://cdn.shopify.com/s/files/1/0634/0906/2084/files/LionsManeFrontView.jpg?v=1771032117",
+          "width": 2800,
+          "height": 3500
+        }
+      ],
+      "options": [
+        {
+          "name": "Title",
+          "position": 1,
+          "values": [
+            "Default Title"
+          ]
+        }
+      ]
+    },
+    {
+      "id": 8475056013508,
+      "title": "Maitake Mushroom Broth (4 Pack with Free Shipping)",
+      "handle": "4-pack-maitake-mushroom-broth-with-free-shipping",
+      "body_html": "<p><meta charset=\"utf-8\"><span>Two River Mushroom Broth is made with organic Maitake Mushrooms, coconut milk, and 20 other simple ingredients. Celebrated for centuries for its nourishing and functional qualities, Maitake is known for supporting overall wellness, helping the body adapt to stress, and contributing to immune balance, thanks to its naturally occurring beta-glucans and powerful antioxidants.</span><span></span></p>\n<p><span>It's comforting, grounding, and satisfying, delicious</span><span> as a sipping drink, it can also be substituted for stock and pairs well with a variety of recipes, from curries to soups and beyond.</span></p>\n<p><span>Free shipping or local pickup at The Farm! </span></p>",
+      "published_at": "2026-01-08T07:40:32-05:00",
+      "created_at": "2026-01-07T20:53:15-05:00",
+      "updated_at": "2026-06-19T08:35:15-04:00",
+      "vendor": "Two River Mushroom",
+      "product_type": "",
+      "tags": [],
+      "variants": [
+        {
+          "id": 45660338618564,
+          "title": "Default Title",
+          "option1": "Default Title",
+          "option2": null,
+          "option3": null,
+          "sku": null,
+          "requires_shipping": true,
+          "taxable": true,
+          "featured_image": null,
+          "available": true,
+          "price": "34.00",
+          "grams": 1878,
+          "compare_at_price": null,
+          "position": 2,
+          "product_id": 8475056013508,
+          "created_at": "2026-01-07T20:53:15-05:00",
+          "updated_at": "2026-06-19T08:35:15-04:00"
+        }
+      ],
+      "images": [
+        {
+          "id": 47579107983556,
+          "created_at": "2026-01-07T20:53:25-05:00",
+          "position": 1,
+          "updated_at": "2026-02-13T20:21:57-05:00",
+          "product_id": 8475056013508,
+          "variant_ids": [],
+          "src": "https://cdn.shopify.com/s/files/1/0634/0906/2084/files/MaitakeFrontView.png?v=1771032117",
+          "width": 4000,
+          "height": 5000
+        },
+        {
+          "id": 47579107950788,
+          "created_at": "2026-01-07T20:53:25-05:00",
+          "position": 2,
+          "updated_at": "2026-01-07T20:58:22-05:00",
+          "product_id": 8475056013508,
+          "variant_ids": [],
+          "src": "https://cdn.shopify.com/s/files/1/0634/0906/2084/files/Maittakebackview.png?v=1767837502",
+          "width": 4000,
+          "height": 5000
+        },
+        {
+          "id": 47579108016324,
+          "created_at": "2026-01-07T20:53:25-05:00",
+          "position": 3,
+          "updated_at": "2026-01-07T20:53:27-05:00",
+          "product_id": 8475056013508,
+          "variant_ids": [],
+          "src": "https://cdn.shopify.com/s/files/1/0634/0906/2084/files/Maitakesideview.png?v=1767837207",
+          "width": 4000,
+          "height": 5000
+        }
+      ],
+      "options": [
+        {
+          "name": "Title",
+          "position": 1,
+          "values": [
+            "Default Title"
+          ]
+        }
+      ]
+    },
+    {
+      "id": 8433160650948,
+      "title": "Chaga Mushroom Broth (4 pack with Free Shipping)",
+      "handle": "4-pack-chaga-mushroom-broth-with-free-shipping",
+      "body_html": "<p><meta charset=\"utf-8\"><span>Two River Mushroom Broth is made with organic wild-harvested Chaga Mushrooms, alongside 20 other simple ingredients to create a broth that is</span><span> savory and earthy with a rich, umami flavor, and boasting anti-inflammatory properties.</span></p>\n<p><span>It's comforting and satisfying, delicious</span><span> as a sipping drink, it can also be substituted for stock and pairs well with a variety of recipes, from simple miso soups and Ramen, to the base for vegetarian gravy.</span></p>\n<p><span>Free shipping or local pickup at The Farm! *Unlike other mushrooms, Chaga does not fully dissolve. Our organic broth may contain some larger pieces and inconsistencies, it's all normal.*</span></p>",
+      "published_at": "2025-11-23T20:18:15-05:00",
+      "created_at": "2025-11-23T20:01:44-05:00",
+      "updated_at": "2026-06-19T08:35:15-04:00",
+      "vendor": "Two River Mushroom",
+      "product_type": "",
+      "tags": [],
+      "variants": [
+        {
+          "id": 45413551800516,
+          "title": "Default Title",
+          "option1": "Default Title",
+          "option2": null,
+          "option3": null,
+          "sku": null,
+          "requires_shipping": true,
+          "taxable": true,
+          "featured_image": null,
+          "available": true,
+          "price": "34.00",
+          "grams": 1878,
+          "compare_at_price": null,
+          "position": 2,
+          "product_id": 8433160650948,
+          "created_at": "2025-11-23T20:01:44-05:00",
+          "updated_at": "2026-06-19T08:35:15-04:00"
+        }
+      ],
+      "images": [
+        {
+          "id": 47080671641796,
+          "created_at": "2025-11-23T20:01:58-05:00",
+          "position": 1,
+          "updated_at": "2026-02-13T20:21:57-05:00",
+          "product_id": 8433160650948,
+          "variant_ids": [],
+          "src": "https://cdn.shopify.com/s/files/1/0634/0906/2084/files/Chagafront.jpg?v=1771032117",
+          "width": 2800,
+          "height": 3500
+        },
+        {
+          "id": 47080671609028,
+          "created_at": "2025-11-23T20:01:58-05:00",
+          "position": 2,
+          "updated_at": "2025-11-23T20:02:43-05:00",
+          "product_id": 8433160650948,
+          "variant_ids": [],
+          "src": "https://cdn.shopify.com/s/files/1/0634/0906/2084/files/Chagaback.jpg?v=1763946163",
+          "width": 2800,
+          "height": 3500
+        }
+      ],
+      "options": [
+        {
+          "name": "Title",
+          "position": 1,
+          "values": [
+            "Default Title"
+          ]
+        }
+      ]
+    },
+    {
+      "id": 8217082298564,
+      "title": "2025 Clinton Hill CSA",
+      "handle": "2025-clinton-hill-csa",
+      "body_html": "<p>11 deliveries, every other Thursday starting June 5 ending and October 30 (no delivery week of July 4) of our 1lb Forest Medley mix of oyster, shiitake, lion's mane, king, and chestnut mushrooms. </p>",
+      "published_at": "2025-06-13T12:42:41-04:00",
+      "created_at": "2025-03-23T14:15:22-04:00",
+      "updated_at": "2026-06-19T08:35:15-04:00",
+      "vendor": "Two River Gourmet Mushroom",
+      "product_type": "",
+      "tags": [
+        "CSA"
+      ],
+      "variants": [
+        {
+          "id": 44716468371652,
+          "title": "Default Title",
+          "option1": "Default Title",
+          "option2": null,
+          "option3": null,
+          "sku": null,
+          "requires_shipping": true,
+          "taxable": true,
+          "featured_image": null,
+          "available": true,
+          "price": "176.00",
+          "grams": 454,
+          "compare_at_price": null,
+          "position": 1,
+          "product_id": 8217082298564,
+          "created_at": "2025-03-23T14:15:22-04:00",
+          "updated_at": "2026-06-19T08:35:15-04:00"
+        }
+      ],
+      "images": [
+        {
+          "id": 37272814551236,
+          "created_at": "2024-04-11T13:22:15-04:00",
+          "position": 1,
+          "updated_at": "2024-04-11T13:22:16-04:00",
+          "product_id": 8217082298564,
+          "variant_ids": [],
+          "src": "https://cdn.shopify.com/s/files/1/0634/0906/2084/files/0-7.jpg?v=1712856136",
+          "width": 2397,
+          "height": 1598
+        }
+      ],
+      "options": [
+        {
+          "name": "Title",
+          "position": 1,
+          "values": [
+            "Default Title"
+          ]
+        }
+      ]
+    },
+    {
+      "id": 7922254774468,
+      "title": "Two River Long Sleeve",
+      "handle": "two-river-long-sleeve",
+      "body_html": "<p><br></p>\n<!---->",
+      "published_at": "2024-06-06T09:52:04-04:00",
+      "created_at": "2024-06-06T09:52:04-04:00",
+      "updated_at": "2026-06-19T08:35:15-04:00",
+      "vendor": "Two River Gourmet Mushroom",
+      "product_type": "",
+      "tags": [],
+      "variants": [
+        {
+          "id": 43772493299908,
+          "title": "S / Green",
+          "option1": "S",
+          "option2": "Green",
+          "option3": null,
+          "sku": "",
+          "requires_shipping": true,
+          "taxable": true,
+          "featured_image": {
+            "id": 38252076892356,
+            "product_id": 7922254774468,
+            "position": 4,
+            "created_at": "2024-06-06T09:51:27-04:00",
+            "updated_at": "2024-06-24T14:21:33-04:00",
+            "alt": "two river mushroom long sleeve t shirt",
+            "width": 1564,
+            "height": 1562,
+            "src": "https://cdn.shopify.com/s/files/1/0634/0906/2084/files/green_two_river_mushroom_long_sleeve_t_shirt.png?v=1719253293",
+            "variant_ids": [
+              43772493299908,
+              43772493365444,
+              43772493430980,
+              43772493496516,
+              43772493562052
+            ]
+          },
+          "available": false,
+          "price": "25.00",
+          "grams": 255,
+          "compare_at_price": null,
+          "position": 2,
+          "product_id": 7922254774468,
+          "created_at": "2024-06-06T09:52:05-04:00",
+          "updated_at": "2026-06-19T08:35:15-04:00"
+        },
+        {
+          "id": 43772493332676,
+          "title": "S / Grey",
+          "option1": "S",
+          "option2": "Grey",
+          "option3": null,
+          "sku": "",
+          "requires_shipping": true,
+          "taxable": true,
+          "featured_image": {
+            "id": 38252076826820,
+            "product_id": 7922254774468,
+            "position": 2,
+            "created_at": "2024-06-06T09:49:47-04:00",
+            "updated_at": "2024-06-24T14:22:17-04:00",
+            "alt": "grey two river mushroom long sleeve t shirt",
+            "width": 1568,
+            "height": 1562,
+            "src": "https://cdn.shopify.com/s/files/1/0634/0906/2084/files/grey_two_river_mushroom_long_sleeve_t_shirt.png?v=1719253337",
+            "variant_ids": [
+              43772493332676,
+              43772493398212,
+              43772493463748,
+              43772493529284,
+              43772493594820
+            ]
+          },
+          "available": false,
+          "price": "25.00",
+          "grams": 255,
+          "compare_at_price": null,
+          "position": 3,
+          "product_id": 7922254774468,
+          "created_at": "2024-06-06T09:52:05-04:00",
+          "updated_at": "2026-06-19T08:35:15-04:00"
+        },
+        {
+          "id": 43772493365444,
+          "title": "M / Green",
+          "option1": "M",
+          "option2": "Green",
+          "option3": null,
+          "sku": "",
+          "requires_shipping": true,
+          "taxable": true,
+          "featured_image": {
+            "id": 38252076892356,
+            "product_id": 7922254774468,
+            "position": 4,
+            "created_at": "2024-06-06T09:51:27-04:00",
+            "updated_at": "2024-06-24T14:21:33-04:00",
+            "alt": "two river mushroom long sleeve t shirt",
+            "width": 1564,
+            "height": 1562,
+            "src": "https://cdn.shopify.com/s/files/1/0634/0906/2084/files/green_two_river_mushroom_long_sleeve_t_shirt.png?v=1719253293",
+            "variant_ids": [
+              43772493299908,
+              43772493365444,
+              43772493430980,
+              43772493496516,
+              43772493562052
+            ]
+          },
+          "available": false,
+          "price": "25.00",
+          "grams": 255,
+          "compare_at_price": null,
+          "position": 4,
+          "product_id": 7922254774468,
+          "created_at": "2024-06-06T09:52:05-04:00",
+          "updated_at": "2026-06-19T08:35:15-04:00"
+        },
+        {
+          "id": 43772493398212,
+          "title": "M / Grey",
+          "option1": "M",
+          "option2": "Grey",
+          "option3": null,
+          "sku": "",
+          "requires_shipping": true,
+          "taxable": true,
+          "featured_image": {
+            "id": 38252076826820,
+            "product_id": 7922254774468,
+            "position": 2,
+            "created_at": "2024-06-06T09:49:47-04:00",
+            "updated_at": "2024-06-24T14:22:17-04:00",
+            "alt": "grey two river mushroom long sleeve t shirt",
+            "width": 1568,
+            "height": 1562,
+            "src": "https://cdn.shopify.com/s/files/1/0634/0906/2084/files/grey_two_river_mushroom_long_sleeve_t_shirt.png?v=1719253337",
+            "variant_ids": [
+              43772493332676,
+              43772493398212,
+              43772493463748,
+              43772493529284,
+              43772493594820
+            ]
+          },
+          "available": false,
+          "price": "25.00",
+          "grams": 255,
+          "compare_at_price": null,
+          "position": 5,
+          "product_id": 7922254774468,
+          "created_at": "2024-06-06T09:52:05-04:00",
+          "updated_at": "2026-06-19T08:35:15-04:00"
+        },
+        {
+          "id": 43772493430980,
+          "title": "L / Green",
+          "option1": "L",
+          "option2": "Green",
+          "option3": null,
+          "sku": "",
+          "requires_shipping": true,
+          "taxable": true,
+          "featured_image": {
+            "id": 38252076892356,
+            "product_id": 7922254774468,
+            "position": 4,
+            "created_at": "2024-06-06T09:51:27-04:00",
+            "updated_at": "2024-06-24T14:21:33-04:00",
+            "alt": "two river mushroom long sleeve t shirt",
+            "width": 1564,
+            "height": 1562,
+            "src": "https://cdn.shopify.com/s/files/1/0634/0906/2084/files/green_two_river_mushroom_long_sleeve_t_shirt.png?v=1719253293",
+            "variant_ids": [
+              43772493299908,
+              43772493365444,
+              43772493430980,
+              43772493496516,
+              43772493562052
+            ]
+          },
+          "available": false,
+          "price": "25.00",
+          "grams": 255,
+          "compare_at_price": null,
+          "position": 6,
+          "product_id": 7922254774468,
+          "created_at": "2024-06-06T09:52:05-04:00",
+          "updated_at": "2026-06-19T08:35:15-04:00"
+        },
+        {
+          "id": 43772493463748,
+          "title": "L / Grey",
+          "option1": "L",
+          "option2": "Grey",
+          "option3": null,
+          "sku": "",
+          "requires_shipping": true,
+          "taxable": true,
+          "featured_image": {
+            "id": 38252076826820,
+            "product_id": 7922254774468,
+            "position": 2,
+            "created_at": "2024-06-06T09:49:47-04:00",
+            "updated_at": "2024-06-24T14:22:17-04:00",
+            "alt": "grey two river mushroom long sleeve t shirt",
+            "width": 1568,
+            "height": 1562,
+            "src": "https://cdn.shopify.com/s/files/1/0634/0906/2084/files/grey_two_river_mushroom_long_sleeve_t_shirt.png?v=1719253337",
+            "variant_ids": [
+              43772493332676,
+              43772493398212,
+              43772493463748,
+              43772493529284,
+              43772493594820
+            ]
+          },
+          "available": false,
+          "price": "25.00",
+          "grams": 255,
+          "compare_at_price": null,
+          "position": 7,
+          "product_id": 7922254774468,
+          "created_at": "2024-06-06T09:52:05-04:00",
+          "updated_at": "2026-06-19T08:35:15-04:00"
+        },
+        {
+          "id": 43772493496516,
+          "title": "XL / Green",
+          "option1": "XL",
+          "option2": "Green",
+          "option3": null,
+          "sku": "",
+          "requires_shipping": true,
+          "taxable": true,
+          "featured_image": {
+            "id": 38252076892356,
+            "product_id": 7922254774468,
+            "position": 4,
+            "created_at": "2024-06-06T09:51:27-04:00",
+            "updated_at": "2024-06-24T14:21:33-04:00",
+            "alt": "two river mushroom long sleeve t shirt",
+            "width": 1564,
+            "height": 1562,
+            "src": "https://cdn.shopify.com/s/files/1/0634/0906/2084/files/green_two_river_mushroom_long_sleeve_t_shirt.png?v=1719253293",
+            "variant_ids": [
+              43772493299908,
+              43772493365444,
+              43772493430980,
+              43772493496516,
+              43772493562052
+            ]
+          },
+          "available": false,
+          "price": "25.00",
+          "grams": 255,
+          "compare_at_price": null,
+          "position": 8,
+          "product_id": 7922254774468,
+          "created_at": "2024-06-06T09:52:05-04:00",
+          "updated_at": "2026-06-19T08:35:15-04:00"
+        },
+        {
+          "id": 43772493529284,
+          "title": "XL / Grey",
+          "option1": "XL",
+          "option2": "Grey",
+          "option3": null,
+          "sku": "",
+          "requires_shipping": true,
+          "taxable": true,
+          "featured_image": {
+            "id": 38252076826820,
+            "product_id": 7922254774468,
+            "position": 2,
+            "created_at": "2024-06-06T09:49:47-04:00",
+            "updated_at": "2024-06-24T14:22:17-04:00",
+            "alt": "grey two river mushroom long sleeve t shirt",
+            "width": 1568,
+            "height": 1562,
+            "src": "https://cdn.shopify.com/s/files/1/0634/0906/2084/files/grey_two_river_mushroom_long_sleeve_t_shirt.png?v=1719253337",
+            "variant_ids": [
+              43772493332676,
+              43772493398212,
+              43772493463748,
+              43772493529284,
+              43772493594820
+            ]
+          },
+          "available": false,
+          "price": "25.00",
+          "grams": 255,
+          "compare_at_price": null,
+          "position": 9,
+          "product_id": 7922254774468,
+          "created_at": "2024-06-06T09:52:05-04:00",
+          "updated_at": "2026-06-19T08:35:15-04:00"
+        },
+        {
+          "id": 43772493562052,
+          "title": "2XL / Green",
+          "option1": "2XL",
+          "option2": "Green",
+          "option3": null,
+          "sku": "",
+          "requires_shipping": true,
+          "taxable": true,
+          "featured_image": {
+            "id": 38252076892356,
+            "product_id": 7922254774468,
+            "position": 4,
+            "created_at": "2024-06-06T09:51:27-04:00",
+            "updated_at": "2024-06-24T14:21:33-04:00",
+            "alt": "two river mushroom long sleeve t shirt",
+            "width": 1564,
+            "height": 1562,
+            "src": "https://cdn.shopify.com/s/files/1/0634/0906/2084/files/green_two_river_mushroom_long_sleeve_t_shirt.png?v=1719253293",
+            "variant_ids": [
+              43772493299908,
+              43772493365444,
+              43772493430980,
+              43772493496516,
+              43772493562052
+            ]
+          },
+          "available": false,
+          "price": "25.00",
+          "grams": 255,
+          "compare_at_price": null,
+          "position": 10,
+          "product_id": 7922254774468,
+          "created_at": "2024-06-06T09:52:05-04:00",
+          "updated_at": "2026-06-19T08:35:15-04:00"
+        },
+        {
+          "id": 43772493594820,
+          "title": "2XL / Grey",
+          "option1": "2XL",
+          "option2": "Grey",
+          "option3": null,
+          "sku": "",
+          "requires_shipping": true,
+          "taxable": true,
+          "featured_image": {
+            "id": 38252076826820,
+            "product_id": 7922254774468,
+            "position": 2,
+            "created_at": "2024-06-06T09:49:47-04:00",
+            "updated_at": "2024-06-24T14:22:17-04:00",
+            "alt": "grey two river mushroom long sleeve t shirt",
+            "width": 1568,
+            "height": 1562,
+            "src": "https://cdn.shopify.com/s/files/1/0634/0906/2084/files/grey_two_river_mushroom_long_sleeve_t_shirt.png?v=1719253337",
+            "variant_ids": [
+              43772493332676,
+              43772493398212,
+              43772493463748,
+              43772493529284,
+              43772493594820
+            ]
+          },
+          "available": false,
+          "price": "25.00",
+          "grams": 255,
+          "compare_at_price": null,
+          "position": 11,
+          "product_id": 7922254774468,
+          "created_at": "2024-06-06T09:52:05-04:00",
+          "updated_at": "2026-06-19T08:35:15-04:00"
+        }
+      ],
+      "images": [
+        {
+          "id": 38252076794052,
+          "created_at": "2024-06-06T09:49:41-04:00",
+          "position": 1,
+          "updated_at": "2024-06-24T14:22:42-04:00",
+          "product_id": 7922254774468,
+          "variant_ids": [],
+          "src": "https://cdn.shopify.com/s/files/1/0634/0906/2084/files/two_river_mushroom_long_sleeve_t_shirt_grey.png?v=1719253362",
+          "width": 1568,
+          "height": 1554
+        },
+        {
+          "id": 38252076826820,
+          "created_at": "2024-06-06T09:49:47-04:00",
+          "position": 2,
+          "updated_at": "2024-06-24T14:22:17-04:00",
+          "product_id": 7922254774468,
+          "variant_ids": [
+            43772493332676,
+            43772493398212,
+            43772493463748,
+            43772493529284,
+            43772493594820
+          ],
+          "src": "https://cdn.shopify.com/s/files/1/0634/0906/2084/files/grey_two_river_mushroom_long_sleeve_t_shirt.png?v=1719253337",
+          "width": 1568,
+          "height": 1562
+        },
+        {
+          "id": 38252076859588,
+          "created_at": "2024-06-06T09:51:22-04:00",
+          "position": 3,
+          "updated_at": "2024-06-24T14:21:58-04:00",
+          "product_id": 7922254774468,
+          "variant_ids": [],
+          "src": "https://cdn.shopify.com/s/files/1/0634/0906/2084/files/two_river_mushroom_long_sleeve_t_shirt.png?v=1719253318",
+          "width": 1568,
+          "height": 1566
+        },
+        {
+          "id": 38252076892356,
+          "created_at": "2024-06-06T09:51:27-04:00",
+          "position": 4,
+          "updated_at": "2024-06-24T14:21:33-04:00",
+          "product_id": 7922254774468,
+          "variant_ids": [
+            43772493299908,
+            43772493365444,
+            43772493430980,
+            43772493496516,
+            43772493562052
+          ],
+          "src": "https://cdn.shopify.com/s/files/1/0634/0906/2084/files/green_two_river_mushroom_long_sleeve_t_shirt.png?v=1719253293",
+          "width": 1564,
+          "height": 1562
+        }
+      ],
+      "options": [
+        {
+          "name": "Size",
+          "position": 1,
+          "values": [
+            "S",
+            "M",
+            "L",
+            "XL",
+            "2XL"
+          ]
+        },
+        {
+          "name": "Color",
+          "position": 2,
+          "values": [
+            "Green",
+            "Grey"
+          ]
+        }
+      ]
+    },
+    {
+      "id": 7707174174916,
+      "title": "King Trumpet Oyster",
+      "handle": "king-osyter",
+      "body_html": "<h3><span style=\"color: rgb(255, 42, 0);\" data-mce-style=\"color: rgb(255, 42, 0);\"><strong><span style=\"font-family: -apple-system, BlinkMacSystemFont, 'San Francisco', 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif; font-size: 0.875rem;\" data-mce-style=\"font-family: -apple-system, BlinkMacSystemFont, 'San Francisco', 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif; font-size: 0.875rem;\">LOCAL FARM PICK UP ONLY. WE DO NOT SHIP OUR MUSHROOMS</span></strong></span></h3>\n<h3><span style=\"color: rgb(255, 42, 0);\" data-mce-style=\"color: rgb(255, 42, 0);\"><strong><span style=\"font-family: -apple-system, BlinkMacSystemFont, 'San Francisco', 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif; font-size: 0.875rem;\" data-mce-style=\"font-family: -apple-system, BlinkMacSystemFont, 'San Francisco', 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif; font-size: 0.875rem;\">PLEASE SELECT PICK UP DURING CHECKOUT.</span></strong></span></h3>\n<!---->",
+      "published_at": "2024-04-11T13:24:40-04:00",
+      "created_at": "2024-04-11T13:24:40-04:00",
+      "updated_at": "2026-06-19T08:35:15-04:00",
+      "vendor": "Two River Mushroom",
+      "product_type": "USDA Organic Specialty Mushrooms",
+      "tags": [],
+      "variants": [
+        {
+          "id": 43255280763076,
+          "title": "Default Title",
+          "option1": "Default Title",
+          "option2": null,
+          "option3": null,
+          "sku": "9589354415",
+          "requires_shipping": true,
+          "taxable": true,
+          "featured_image": null,
+          "available": false,
+          "price": "6.00",
+          "grams": 0,
+          "compare_at_price": null,
+          "position": 2,
+          "product_id": 7707174174916,
+          "created_at": "2024-04-11T13:24:41-04:00",
+          "updated_at": "2026-06-19T08:35:15-04:00"
+        }
+      ],
+      "images": [
+        {
+          "id": 37272821563588,
+          "created_at": "2024-04-11T13:24:40-04:00",
+          "position": 1,
+          "updated_at": "2024-06-24T14:34:26-04:00",
+          "product_id": 7707174174916,
+          "variant_ids": [],
+          "src": "https://cdn.shopify.com/s/files/1/0634/0906/2084/files/king_trumpet_oyster_mushroom.jpg?v=1719254066",
+          "width": 2397,
+          "height": 1598
+        }
+      ],
+      "options": [
+        {
+          "name": "Title",
+          "position": 1,
+          "values": [
+            "Default Title"
+          ]
+        }
+      ]
+    },
+    {
+      "id": 7570572280004,
+      "title": "Maitake Mushroom",
+      "handle": "maitake-mushroom",
+      "body_html": "<h3><span style=\"color: rgb(255, 42, 0);\" data-mce-style=\"color: rgb(255, 42, 0);\"><strong><span style=\"font-family: -apple-system, BlinkMacSystemFont, 'San Francisco', 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif; font-size: 0.875rem;\" data-mce-style=\"font-family: -apple-system, BlinkMacSystemFont, 'San Francisco', 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif; font-size: 0.875rem;\">LOCAL FARM PICK UP ONLY. WE DO NOT SHIP OUR MUSHROOMS</span></strong></span></h3>\n<h3><span style=\"color: rgb(255, 42, 0);\" data-mce-style=\"color: rgb(255, 42, 0);\"><strong><span style=\"font-family: -apple-system, BlinkMacSystemFont, 'San Francisco', 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif; font-size: 0.875rem;\" data-mce-style=\"font-family: -apple-system, BlinkMacSystemFont, 'San Francisco', 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif; font-size: 0.875rem;\">PLEASE SELECT PICK UP DURING CHECKOUT.</span></strong></span></h3>\n<p><span style=\"font-family: -apple-system, BlinkMacSystemFont, 'San Francisco', 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif; font-size: 0.875rem;\">Maitake mushrooms have a distinct aroma and a rich, woodsy flavor with a delicate and feathery texture. They can be cooked as a whole cluster or torn into smaller pieces to suit any recipe. It’s a perfect pick for main dishes as well as for side dishes and soups.</span></p>\n<ul style=\"font-family: -apple-system, BlinkMacSystemFont, 'San Francisco', 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif; font-size: 0.875rem;\" data-mce-fragment=\"1\">\n<li data-mce-fragment=\"1\">Rich, Woodsy Flavor</li>\n<li data-mce-fragment=\"1\">Meaty, Earthy, Peppery</li>\n<li data-mce-fragment=\"1\">Succulent Texture</li>\n</ul>",
+      "published_at": "2024-02-06T19:03:52-05:00",
+      "created_at": "2024-02-06T19:03:52-05:00",
+      "updated_at": "2026-06-19T08:35:15-04:00",
+      "vendor": "Two River Mushroom",
+      "product_type": "USDA Organic Specialty Mushrooms",
+      "tags": [],
+      "variants": [
+        {
+          "id": 42878506598596,
+          "title": "Default Title",
+          "option1": "Default Title",
+          "option2": null,
+          "option3": null,
+          "sku": "",
+          "requires_shipping": true,
+          "taxable": true,
+          "featured_image": null,
+          "available": true,
+          "price": "7.00",
+          "grams": 113,
+          "compare_at_price": null,
+          "position": 2,
+          "product_id": 7570572280004,
+          "created_at": "2024-02-06T19:03:52-05:00",
+          "updated_at": "2026-06-19T08:35:15-04:00"
+        }
+      ],
+      "images": [
+        {
+          "id": 37272811897028,
+          "created_at": "2024-04-11T13:21:54-04:00",
+          "position": 1,
+          "updated_at": "2024-04-11T13:21:55-04:00",
+          "product_id": 7570572280004,
+          "variant_ids": [],
+          "src": "https://cdn.shopify.com/s/files/1/0634/0906/2084/files/0-6.jpg?v=1712856115",
+          "width": 2320,
+          "height": 1598
+        }
+      ],
+      "options": [
+        {
+          "name": "Title",
+          "position": 1,
+          "values": [
+            "Default Title"
+          ]
+        }
+      ]
+    },
+    {
+      "id": 7536331129028,
+      "title": "Lion’s Mane & Shiitake Mushroom Broth (4 Pack with Free Shipping)",
+      "handle": "4-pack-mushroom-broth",
+      "body_html": "<p><meta charset=\"utf-8\"><span>Two River Mushroom Broth is made with organic Lion's Mane and Shiitake Mushrooms, alongside 20 other simple ingredients to create a broth that is</span><span> savory and earthy with a rich, umami flavor. </span><span>It's comforting and satisfying, delicious</span><span> as a sipping drink, it can also be substituted for stock and pairs well with a variety of recipes, from simple miso soups and Ramen, to the base for vegetarian gravy.</span></p>\n<ul class=\"a-unordered-list a-vertical a-spacing-mini\">\n<li class=\"a-spacing-mini\"><span class=\"a-list-item\">Rich Umami Flavor – A satisfying base for soups, risottos, ramen, or sipping straight from the mug.</span></li>\n<li class=\"a-spacing-mini\"><span class=\"a-list-item\">Functional Ingredients – Includes adaptogenic mushrooms known to support immune health, focus, and energy.</span></li>\n<li class=\"a-spacing-mini\"><span class=\"a-list-item\">Clean &amp; Organic – Made with certified organic produce and mushrooms, with no preservatives or artificial anything.</span></li>\n<li class=\"a-spacing-mini\"><span class=\"a-list-item\">Plant-Based &amp; Gluten-Free – 100% vegan, gluten-free, and dairy-free — perfect for most dietary lifestyles.</span></li>\n<li class=\"a-spacing-mini\"><span class=\"a-list-item\">Ready to Use – Conveniently packaged in 4 individual containers; heat, pour, and enjoy.</span></li>\n</ul>",
+      "published_at": "2024-01-05T20:33:03-05:00",
+      "created_at": "2024-01-05T20:33:03-05:00",
+      "updated_at": "2026-06-19T08:35:15-04:00",
+      "vendor": "Two River Mushroom",
+      "product_type": "",
+      "tags": [],
+      "variants": [
+        {
+          "id": 42722500935876,
+          "title": "Default Title",
+          "option1": "Default Title",
+          "option2": null,
+          "option3": null,
+          "sku": "",
+          "requires_shipping": true,
+          "taxable": true,
+          "featured_image": null,
+          "available": true,
+          "price": "34.00",
+          "grams": 1878,
+          "compare_at_price": null,
+          "position": 2,
+          "product_id": 7536331129028,
+          "created_at": "2024-01-05T20:33:04-05:00",
+          "updated_at": "2026-06-19T08:35:15-04:00"
+        }
+      ],
+      "images": [
+        {
+          "id": 47574444376260,
+          "created_at": "2026-01-07T10:36:08-05:00",
+          "position": 1,
+          "updated_at": "2026-01-07T10:36:15-05:00",
+          "product_id": 7536331129028,
+          "variant_ids": [],
+          "src": "https://cdn.shopify.com/s/files/1/0634/0906/2084/files/TRMFourPack.jpg?v=1767800175",
+          "width": 1080,
+          "height": 1080
+        },
+        {
+          "id": 47574444212420,
+          "created_at": "2026-01-07T10:36:08-05:00",
+          "position": 2,
+          "updated_at": "2026-01-07T10:36:15-05:00",
+          "product_id": 7536331129028,
+          "variant_ids": [],
+          "src": "https://cdn.shopify.com/s/files/1/0634/0906/2084/files/TRMFourPack6.jpg?v=1767800175",
+          "width": 1500,
+          "height": 1500
+        },
+        {
+          "id": 47574444245188,
+          "created_at": "2026-01-07T10:36:08-05:00",
+          "position": 3,
+          "updated_at": "2026-01-07T10:36:15-05:00",
+          "product_id": 7536331129028,
+          "variant_ids": [],
+          "src": "https://cdn.shopify.com/s/files/1/0634/0906/2084/files/TRMFourPack5.jpg?v=1767800175",
+          "width": 1500,
+          "height": 1500
+        },
+        {
+          "id": 47574444277956,
+          "created_at": "2026-01-07T10:36:08-05:00",
+          "position": 4,
+          "updated_at": "2026-01-07T10:36:15-05:00",
+          "product_id": 7536331129028,
+          "variant_ids": [],
+          "src": "https://cdn.shopify.com/s/files/1/0634/0906/2084/files/TRMFourPack4.jpg?v=1767800175",
+          "width": 1500,
+          "height": 1500
+        },
+        {
+          "id": 47574444310724,
+          "created_at": "2026-01-07T10:36:08-05:00",
+          "position": 5,
+          "updated_at": "2026-01-07T10:36:15-05:00",
+          "product_id": 7536331129028,
+          "variant_ids": [],
+          "src": "https://cdn.shopify.com/s/files/1/0634/0906/2084/files/TRMFourPack3.jpg?v=1767800175",
+          "width": 1500,
+          "height": 1500
+        },
+        {
+          "id": 47574444343492,
+          "created_at": "2026-01-07T10:36:08-05:00",
+          "position": 6,
+          "updated_at": "2026-01-07T10:36:15-05:00",
+          "product_id": 7536331129028,
+          "variant_ids": [],
+          "src": "https://cdn.shopify.com/s/files/1/0634/0906/2084/files/TRMFourPack2.jpg?v=1767800175",
+          "width": 1500,
+          "height": 1500
+        }
+      ],
+      "options": [
+        {
+          "name": "Title",
+          "position": 1,
+          "values": [
+            "Default Title"
+          ]
+        }
+      ]
+    },
+    {
+      "id": 7536281223364,
+      "title": "Chestnut Mushrooms",
+      "handle": "chestnut-mushrooms",
+      "body_html": "<h3>\n<span style=\"color: rgb(255, 42, 0);\" data-mce-style=\"color: rgb(255, 42, 0);\"><strong><span style=\"font-family: -apple-system, BlinkMacSystemFont, 'San Francisco', 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif; font-size: 0.875rem;\" data-mce-style=\"font-family: -apple-system, BlinkMacSystemFont, 'San Francisco', 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif; font-size: 0.875rem;\">LOCAL FARM PICK UP ONLY. </span></strong></span><span style=\"color: rgb(255, 42, 0);\" data-mce-style=\"color: rgb(255, 42, 0);\"><strong><span style=\"font-family: -apple-system, BlinkMacSystemFont, 'San Francisco', 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif; font-size: 0.875rem;\" data-mce-style=\"font-family: -apple-system, BlinkMacSystemFont, 'San Francisco', 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif; font-size: 0.875rem;\">PLEASE SELECT PICK UP DURING CHECKOUT.</span></strong></span>\n</h3>\n<h3><span style=\"color: rgb(255, 42, 0);\" data-mce-style=\"color: rgb(255, 42, 0);\"><strong><span style=\"font-family: -apple-system, BlinkMacSystemFont, 'San Francisco', 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif; font-size: 0.875rem;\" data-mce-style=\"font-family: -apple-system, BlinkMacSystemFont, 'San Francisco', 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif; font-size: 0.875rem;\">WE DO NOT SHIP OUR MUSHROOMS.</span></strong></span></h3>\n<p><span style=\"font-family: -apple-system, BlinkMacSystemFont, 'San Francisco', 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif; font-size: 0.875rem;\">Form in clusters of leggy orange cinnamon caps speckled with white flakes, ready to sauté and serve.</span></p>\n<ul style=\"font-family: -apple-system, BlinkMacSystemFont, 'San Francisco', 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif; font-size: 0.875rem;\" data-mce-fragment=\"1\">\n<li data-mce-fragment=\"1\">Earthy and Nutty Flavor</li>\n<li data-mce-fragment=\"1\">Robust Aroma</li>\n<li data-mce-fragment=\"1\">Crunchy Firm Texture (even after cooked)</li>\n<li data-mce-fragment=\"1\">Stems just as good as the caps</li>\n</ul>",
+      "published_at": "2024-01-05T16:37:23-05:00",
+      "created_at": "2024-01-05T16:37:23-05:00",
+      "updated_at": "2026-06-19T08:35:15-04:00",
+      "vendor": "Two River Mushroom",
+      "product_type": "USDA Organic Specialty Mushrooms",
+      "tags": [],
+      "variants": [
+        {
+          "id": 42722227880132,
+          "title": "Default Title",
+          "option1": "Default Title",
+          "option2": null,
+          "option3": null,
+          "sku": "9589320190",
+          "requires_shipping": true,
+          "taxable": true,
+          "featured_image": null,
+          "available": true,
+          "price": "6.00",
+          "grams": 113,
+          "compare_at_price": null,
+          "position": 2,
+          "product_id": 7536281223364,
+          "created_at": "2024-01-05T16:37:24-05:00",
+          "updated_at": "2026-06-19T08:35:15-04:00"
+        }
+      ],
+      "images": [
+        {
+          "id": 37272827363524,
+          "created_at": "2024-04-11T13:27:06-04:00",
+          "position": 1,
+          "updated_at": "2024-06-24T14:31:55-04:00",
+          "product_id": 7536281223364,
+          "variant_ids": [],
+          "src": "https://cdn.shopify.com/s/files/1/0634/0906/2084/files/organic_chestnut_mushrooms.jpg?v=1719253915",
+          "width": 2397,
+          "height": 1598
+        }
+      ],
+      "options": [
+        {
+          "name": "Title",
+          "position": 1,
+          "values": [
+            "Default Title"
+          ]
+        }
+      ]
+    },
+    {
+      "id": 7536280797380,
+      "title": "Golden Oyster Mushrooms",
+      "handle": "golden-oyster-mushrooms",
+      "body_html": "<h3><span style=\"color: rgb(255, 42, 0);\" data-mce-style=\"color: rgb(255, 42, 0);\"><strong><span style=\"font-family: -apple-system, BlinkMacSystemFont, 'San Francisco', 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif; font-size: 0.875rem;\" data-mce-style=\"font-family: -apple-system, BlinkMacSystemFont, 'San Francisco', 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif; font-size: 0.875rem;\">LOCAL FARM PICK UP ONLY. WE DO NOT SHIP OUR MUSHROOMS</span></strong></span></h3>\n<h3><span style=\"color: rgb(255, 42, 0);\" data-mce-style=\"color: rgb(255, 42, 0);\"><strong><span style=\"font-family: -apple-system, BlinkMacSystemFont, 'San Francisco', 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif; font-size: 0.875rem;\" data-mce-style=\"font-family: -apple-system, BlinkMacSystemFont, 'San Francisco', 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif; font-size: 0.875rem;\">PLEASE SELECT PICK UP DURING CHECKOUT.</span></strong></span></h3>\n<p><span style=\"font-family: -apple-system, BlinkMacSystemFont, 'San Francisco', 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif; font-size: 0.875rem;\">Golden Oysters grow bright yellow clusters. These fragrant mushrooms smell like red wine and have a crispy but slightly chewy texture</span></p>\n<ul style=\"font-family: -apple-system, BlinkMacSystemFont, 'San Francisco', 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif; font-size: 0.875rem;\" data-mce-fragment=\"1\">\n<li data-mce-fragment=\"1\">Buttery Flavor</li>\n<li data-mce-fragment=\"1\">Fruity Aroma</li>\n<li data-mce-fragment=\"1\">Mild taste</li>\n<li data-mce-fragment=\"1\">Crunchy Texture</li>\n</ul>",
+      "published_at": "2024-01-05T16:35:46-05:00",
+      "created_at": "2024-01-05T16:35:46-05:00",
+      "updated_at": "2026-06-19T08:35:15-04:00",
+      "vendor": "Two River Mushroom",
+      "product_type": "USDA Organic Specialty Mushrooms",
+      "tags": [],
+      "variants": [
+        {
+          "id": 42722227126468,
+          "title": "Default Title",
+          "option1": "Default Title",
+          "option2": null,
+          "option3": null,
+          "sku": "9685234116",
+          "requires_shipping": true,
+          "taxable": true,
+          "featured_image": null,
+          "available": true,
+          "price": "5.00",
+          "grams": 113,
+          "compare_at_price": null,
+          "position": 2,
+          "product_id": 7536280797380,
+          "created_at": "2024-01-05T16:35:46-05:00",
+          "updated_at": "2026-06-19T08:35:15-04:00"
+        }
+      ],
+      "images": [
+        {
+          "id": 37272826282180,
+          "created_at": "2024-04-11T13:26:26-04:00",
+          "position": 1,
+          "updated_at": "2024-06-24T14:33:18-04:00",
+          "product_id": 7536280797380,
+          "variant_ids": [],
+          "src": "https://cdn.shopify.com/s/files/1/0634/0906/2084/files/golden_oyster_mushrooms.jpg?v=1719253998",
+          "width": 2397,
+          "height": 1598
+        }
+      ],
+      "options": [
+        {
+          "name": "Title",
+          "position": 1,
+          "values": [
+            "Default Title"
+          ]
+        }
+      ]
+    },
+    {
+      "id": 7536280240324,
+      "title": "Pioppino Mushrooms",
+      "handle": "pioppino-mushrooms",
+      "body_html": "<h3>\n<span style=\"color: rgb(255, 42, 0);\" data-mce-style=\"color: rgb(255, 42, 0);\"><strong><span style=\"font-family: -apple-system, BlinkMacSystemFont, 'San Francisco', 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif; font-size: 0.875rem;\" data-mce-style=\"font-family: -apple-system, BlinkMacSystemFont, 'San Francisco', 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif; font-size: 0.875rem;\">LOCAL FARM PICK UP ONLY. </span></strong></span><span style=\"color: rgb(255, 42, 0);\" data-mce-style=\"color: rgb(255, 42, 0);\"><strong><span style=\"font-family: -apple-system, BlinkMacSystemFont, 'San Francisco', 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif; font-size: 0.875rem;\" data-mce-style=\"font-family: -apple-system, BlinkMacSystemFont, 'San Francisco', 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif; font-size: 0.875rem;\">PLEASE SELECT PICK UP DURING CHECKOUT.</span></strong></span>\n</h3>\n<h3><span style=\"color: rgb(255, 42, 0);\" data-mce-style=\"color: rgb(255, 42, 0);\"><strong><span style=\"font-family: -apple-system, BlinkMacSystemFont, 'San Francisco', 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif; font-size: 0.875rem;\" data-mce-style=\"font-family: -apple-system, BlinkMacSystemFont, 'San Francisco', 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif; font-size: 0.875rem;\">WE DO NOT SHIP OUR MUSHROOMS.</span></strong></span></h3>\n<p><span style=\"font-family: -apple-system, BlinkMacSystemFont, 'San Francisco', 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif; font-size: 0.875rem;\">A unique and hearty flavor, the Pioppino has magnificent dark brown caps on long cream colored stems. With an intense forest flavor it's perfect for pastas, game and red meats.</span></p>\n<ul style=\"font-family: -apple-system, BlinkMacSystemFont, 'San Francisco', 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif; font-size: 0.875rem;\" data-mce-fragment=\"1\">\n<li data-mce-fragment=\"1\">Faint Floral Aroma</li>\n<li data-mce-fragment=\"1\">Nutty, peppery and earthy flavor</li>\n<li data-mce-fragment=\"1\">Firm Texture. Widely used in Italy for pasta con Funghi</li>\n</ul>",
+      "published_at": "2024-01-05T16:34:15-05:00",
+      "created_at": "2024-01-05T16:34:15-05:00",
+      "updated_at": "2026-06-19T08:35:15-04:00",
+      "vendor": "Two River Mushroom",
+      "product_type": "USDA Organic Specialty Mushrooms",
+      "tags": [],
+      "variants": [
+        {
+          "id": 42722225750212,
+          "title": "Default Title",
+          "option1": "Default Title",
+          "option2": null,
+          "option3": null,
+          "sku": "9685209648",
+          "requires_shipping": true,
+          "taxable": true,
+          "featured_image": null,
+          "available": true,
+          "price": "6.00",
+          "grams": 113,
+          "compare_at_price": null,
+          "position": 2,
+          "product_id": 7536280240324,
+          "created_at": "2024-01-05T16:34:16-05:00",
+          "updated_at": "2026-06-19T08:35:15-04:00"
+        }
+      ],
+      "images": [
+        {
+          "id": 37272797937860,
+          "created_at": "2024-04-11T13:20:50-04:00",
+          "position": 1,
+          "updated_at": "2024-04-11T13:20:51-04:00",
+          "product_id": 7536280240324,
+          "variant_ids": [],
+          "src": "https://cdn.shopify.com/s/files/1/0634/0906/2084/files/0-4.jpg?v=1712856051",
+          "width": 2397,
+          "height": 1598
+        }
+      ],
+      "options": [
+        {
+          "name": "Title",
+          "position": 1,
+          "values": [
+            "Default Title"
+          ]
+        }
+      ]
+    },
+    {
+      "id": 7536279945412,
+      "title": "Forest Medley Mix",
+      "handle": "forest-medley-mix",
+      "body_html": "<h3><span style=\"color: rgb(255, 42, 0);\" data-mce-style=\"color: rgb(255, 42, 0);\"><strong><span style=\"font-family: -apple-system, BlinkMacSystemFont, 'San Francisco', 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif; font-size: 0.875rem;\" data-mce-style=\"font-family: -apple-system, BlinkMacSystemFont, 'San Francisco', 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif; font-size: 0.875rem;\">LOCAL FARM PICK UP ONLY. WE DO NOT SHIP OUR MUSHROOMS</span></strong></span></h3>\n<h3><span style=\"color: rgb(255, 42, 0);\" data-mce-style=\"color: rgb(255, 42, 0);\"><strong><span style=\"font-family: -apple-system, BlinkMacSystemFont, 'San Francisco', 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif; font-size: 0.875rem;\" data-mce-style=\"font-family: -apple-system, BlinkMacSystemFont, 'San Francisco', 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif; font-size: 0.875rem;\">PLEASE SELECT PICK UP DURING CHECKOUT.</span></strong></span></h3>\n<p><span style=\"font-family: -apple-system, BlinkMacSystemFont, 'San Francisco', 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif; font-size: 0.875rem;\" data-mce-style=\"font-family: -apple-system, BlinkMacSystemFont, 'San Francisco', 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif; font-size: 0.875rem;\">Our variety pack includes an abundant selection of clean and dry cultivated mushrooms. A great way to taste all the organic varieties that Two River Mushroom Grows.  Can be used in any application. Soups, sauces, or a side dish.  The Forest Medley makes the perfect addition to any meal.</span></p>\n<ul style=\"font-family: -apple-system, BlinkMacSystemFont, 'San Francisco', 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif; font-size: 0.875rem;\" data-mce-fragment=\"1\" data-mce-style=\"font-family: -apple-system, BlinkMacSystemFont, 'San Francisco', 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif; font-size: 0.875rem;\">\n<li data-mce-fragment=\"1\">Woodsy Aroma</li>\n<li data-mce-fragment=\"1\">Savory Taste</li>\n<li data-mce-fragment=\"1\">Velvety Texture</li>\n</ul>",
+      "published_at": "2024-01-05T16:33:09-05:00",
+      "created_at": "2024-01-05T16:33:09-05:00",
+      "updated_at": "2026-06-19T08:35:15-04:00",
+      "vendor": "Two River Mushroom",
+      "product_type": "USDA Organic Specialty Mushrooms",
+      "tags": [],
+      "variants": [
+        {
+          "id": 42722225455300,
+          "title": "Default Title",
+          "option1": "Default Title",
+          "option2": null,
+          "option3": null,
+          "sku": "9589348735",
+          "requires_shipping": true,
+          "taxable": true,
+          "featured_image": null,
+          "available": true,
+          "price": "10.00",
+          "grams": 170,
+          "compare_at_price": null,
+          "position": 2,
+          "product_id": 7536279945412,
+          "created_at": "2024-01-05T16:33:10-05:00",
+          "updated_at": "2026-06-19T08:35:15-04:00"
+        }
+      ],
+      "images": [
+        {
+          "id": 37272814551236,
+          "created_at": "2024-04-11T13:22:15-04:00",
+          "position": 1,
+          "updated_at": "2024-04-11T13:22:16-04:00",
+          "product_id": 7536279945412,
+          "variant_ids": [],
+          "src": "https://cdn.shopify.com/s/files/1/0634/0906/2084/files/0-7.jpg?v=1712856136",
+          "width": 2397,
+          "height": 1598
+        }
+      ],
+      "options": [
+        {
+          "name": "Title",
+          "position": 1,
+          "values": [
+            "Default Title"
+          ]
+        }
+      ]
+    },
+    {
+      "id": 7536279388356,
+      "title": "Oyster Mushrooms",
+      "handle": "oyster-mushrooms",
+      "body_html": "<h3><span style=\"color: rgb(255, 42, 0);\" data-mce-style=\"color: rgb(255, 42, 0);\"><strong><span style=\"font-family: -apple-system, BlinkMacSystemFont, 'San Francisco', 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif; font-size: 0.875rem;\" data-mce-style=\"font-family: -apple-system, BlinkMacSystemFont, 'San Francisco', 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif; font-size: 0.875rem;\">LOCAL FARM PICK UP ONLY. WE DO NOT SHIP OUR MUSHROOMS</span></strong></span></h3>\n<h3><span style=\"color: rgb(255, 42, 0);\" data-mce-style=\"color: rgb(255, 42, 0);\"><strong><span style=\"font-family: -apple-system, BlinkMacSystemFont, 'San Francisco', 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif; font-size: 0.875rem;\" data-mce-style=\"font-family: -apple-system, BlinkMacSystemFont, 'San Francisco', 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif; font-size: 0.875rem;\">PLEASE SELECT PICK UP DURING CHECKOUT.</span></strong></span></h3>\n<p><span style=\"font-family: -apple-system, BlinkMacSystemFont, 'San Francisco', 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif; font-size: 0.875rem;\">Oyster mushrooms are flat, tender and quick to cook up. With a meaty texture and a gray-blue hue, they are a great ingredient option when you need a fast stir-fry, salad or soup and more.</span><span style=\"font-family: -apple-system, BlinkMacSystemFont, 'San Francisco', 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif; font-size: 0.875rem;\">Mild in Flavor</span><br></p>\n<ul style=\"font-family: -apple-system, BlinkMacSystemFont, 'San Francisco', 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif; font-size: 0.875rem;\" data-mce-fragment=\"1\">\n<li data-mce-fragment=\"1\">Subtly Woody</li>\n<li data-mce-fragment=\"1\">Slightly Sweet</li>\n<li data-mce-fragment=\"1\">Firm Texture</li>\n</ul>",
+      "published_at": "2024-01-05T16:31:48-05:00",
+      "created_at": "2024-01-05T16:31:48-05:00",
+      "updated_at": "2026-06-19T08:35:15-04:00",
+      "vendor": "Two River Mushroom",
+      "product_type": "USDA Organic Specialty Mushrooms",
+      "tags": [],
+      "variants": [
+        {
+          "id": 42722223521988,
+          "title": "Default Title",
+          "option1": "Default Title",
+          "option2": null,
+          "option3": null,
+          "sku": "9589325146",
+          "requires_shipping": true,
+          "taxable": true,
+          "featured_image": null,
+          "available": true,
+          "price": "5.00",
+          "grams": 113,
+          "compare_at_price": null,
+          "position": 2,
+          "product_id": 7536279388356,
+          "created_at": "2024-01-05T16:31:49-05:00",
+          "updated_at": "2026-06-19T08:35:15-04:00"
+        }
+      ],
+      "images": [
+        {
+          "id": 37272831623364,
+          "created_at": "2024-04-11T13:28:54-04:00",
+          "position": 1,
+          "updated_at": "2024-06-24T14:30:51-04:00",
+          "product_id": 7536279388356,
+          "variant_ids": [],
+          "src": "https://cdn.shopify.com/s/files/1/0634/0906/2084/files/organic_oyster_mushrooms.jpg?v=1719253851",
+          "width": 2425,
+          "height": 1598
+        }
+      ],
+      "options": [
+        {
+          "name": "Title",
+          "position": 1,
+          "values": [
+            "Default Title"
+          ]
+        }
+      ]
+    },
+    {
+      "id": 7533760315588,
+      "title": "Shitake Mushrooms",
+      "handle": "shitake-mushrooms",
+      "body_html": "<h3><span style=\"color: rgb(255, 42, 0);\" data-mce-style=\"color: rgb(255, 42, 0);\"><strong><span style=\"font-family: -apple-system, BlinkMacSystemFont, 'San Francisco', 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif; font-size: 0.875rem;\" data-mce-style=\"font-family: -apple-system, BlinkMacSystemFont, 'San Francisco', 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif; font-size: 0.875rem;\">LOCAL FARM PICK UP ONLY. WE DO NOT SHIP OUR MUSHROOMS</span></strong></span></h3>\n<h3><span style=\"color: rgb(255, 42, 0);\" data-mce-style=\"color: rgb(255, 42, 0);\"><strong><span style=\"font-family: -apple-system, BlinkMacSystemFont, 'San Francisco', 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif; font-size: 0.875rem;\" data-mce-style=\"font-family: -apple-system, BlinkMacSystemFont, 'San Francisco', 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif; font-size: 0.875rem;\">PLEASE SELECT PICK UP DURING CHECKOUT.</span></strong></span></h3>\n<p><span style=\"font-family: -apple-system, BlinkMacSystemFont, 'San Francisco', 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif; font-size: 0.875rem;\">Shiitake range in colors from amber to chocolate brown. Shiitakes add a meaty flavor and texture to stir-fries, pastas, soups, entrees and sides.</span></p>\n<ul data-mce-fragment=\"1\">\n<li data-mce-fragment=\"1\">Strong Umami flavor</li>\n<li data-mce-fragment=\"1\">Smoky Aroma</li>\n<li data-mce-fragment=\"1\">Rich and Woodsy when cooked</li>\n<li data-mce-fragment=\"1\">Meaty Texture</li>\n</ul>",
+      "published_at": "2024-01-01T19:53:46-05:00",
+      "created_at": "2024-01-01T19:53:46-05:00",
+      "updated_at": "2026-06-19T08:35:15-04:00",
+      "vendor": "Two River Mushroom",
+      "product_type": "USDA Organic Specialty Mushrooms",
+      "tags": [],
+      "variants": [
+        {
+          "id": 42709802451140,
+          "title": "Default Title",
+          "option1": "Default Title",
+          "option2": null,
+          "option3": null,
+          "sku": "0589371211",
+          "requires_shipping": true,
+          "taxable": true,
+          "featured_image": null,
+          "available": true,
+          "price": "6.00",
+          "grams": 113,
+          "compare_at_price": null,
+          "position": 2,
+          "product_id": 7533760315588,
+          "created_at": "2024-01-01T19:53:47-05:00",
+          "updated_at": "2026-06-19T08:35:15-04:00"
+        }
+      ],
+      "images": [
+        {
+          "id": 35686955909316,
+          "created_at": "2024-01-01T19:53:46-05:00",
+          "position": 1,
+          "updated_at": "2024-01-01T19:53:48-05:00",
+          "product_id": 7533760315588,
+          "variant_ids": [],
+          "src": "https://cdn.shopify.com/s/files/1/0634/0906/2084/files/TRMShitake.jpg?v=1704156828",
+          "width": 4084,
+          "height": 2298
+        }
+      ],
+      "options": [
+        {
+          "name": "Title",
+          "position": 1,
+          "values": [
+            "Default Title"
+          ]
+        }
+      ]
+    },
+    {
+      "id": 7533754548420,
+      "title": "Lion's Mane Mushrooms",
+      "handle": "lions-mane-mushrooms",
+      "body_html": "<h3><span style=\"color: rgb(255, 42, 0);\" data-mce-style=\"color: rgb(255, 42, 0);\"><strong><span style=\"font-family: -apple-system, BlinkMacSystemFont, 'San Francisco', 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif; font-size: 0.875rem;\" data-mce-style=\"font-family: -apple-system, BlinkMacSystemFont, 'San Francisco', 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif; font-size: 0.875rem;\">LOCAL FARM PICK UP ONLY. WE DO NOT SHIP OUR MUSHROOMS</span></strong></span></h3>\n<h3><span style=\"color: rgb(255, 42, 0);\" data-mce-style=\"color: rgb(255, 42, 0);\"><strong><span style=\"font-family: -apple-system, BlinkMacSystemFont, 'San Francisco', 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif; font-size: 0.875rem;\" data-mce-style=\"font-family: -apple-system, BlinkMacSystemFont, 'San Francisco', 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif; font-size: 0.875rem;\">PLEASE SELECT PICK UP DURING CHECKOUT.</span></strong></span></h3>\n<p><meta charset=\"utf-8\"> <span style=\"font-family: -apple-system, BlinkMacSystemFont, 'San Francisco', 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif; font-size: 0.875rem;\">A choice edible and medicinal mushroom. Great for sauteing, deep frying, in stews, sauces and for roasting.  Lion's Mane “Crab Cake” a popular approach.</span></p>\n<ul style=\"font-family: -apple-system, BlinkMacSystemFont, 'San Francisco', 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif; font-size: 0.875rem;\">\n<li>“Seafood like” Compared to crab or lobster</li>\n<li>Slightly Sweet Aroma</li>\n<li>Slightly chewy, tender and juicy</li>\n</ul>\n<ul data-mce-fragment=\"1\"></ul>",
+      "published_at": "2024-01-01T19:50:13-05:00",
+      "created_at": "2024-01-01T19:50:13-05:00",
+      "updated_at": "2026-06-19T08:35:15-04:00",
+      "vendor": "Two River Mushroom",
+      "product_type": "USDA Organic Specialty Mushrooms",
+      "tags": [],
+      "variants": [
+        {
+          "id": 42709796651204,
+          "title": "Default Title",
+          "option1": "Default Title",
+          "option2": null,
+          "option3": null,
+          "sku": "9589305039",
+          "requires_shipping": true,
+          "taxable": true,
+          "featured_image": null,
+          "available": true,
+          "price": "6.00",
+          "grams": 113,
+          "compare_at_price": null,
+          "position": 2,
+          "product_id": 7533754548420,
+          "created_at": "2024-01-01T19:50:14-05:00",
+          "updated_at": "2026-06-19T08:35:15-04:00"
+        }
+      ],
+      "images": [
+        {
+          "id": 37272807768260,
+          "created_at": "2024-04-11T13:21:22-04:00",
+          "position": 1,
+          "updated_at": "2024-04-11T13:21:23-04:00",
+          "product_id": 7533754548420,
+          "variant_ids": [],
+          "src": "https://cdn.shopify.com/s/files/1/0634/0906/2084/files/0-5.jpg?v=1712856083",
+          "width": 2397,
+          "height": 1598
+        }
+      ],
+      "options": [
+        {
+          "name": "Title",
+          "position": 1,
+          "values": [
+            "Default Title"
+          ]
+        }
+      ]
+    }
+  ]
+}

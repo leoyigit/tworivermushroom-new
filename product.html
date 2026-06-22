@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Product · Two River Gourmet Mushroom</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,400;0,500;0,600;1,400&family=Hanken+Grotesk:wght@400;500;600;700&family=Spline+Sans+Mono:wght@500;600&display=swap" rel="stylesheet">
+<link rel="icon" type="image/png" href="https://www.tworivermushroom.com/cdn/shop/files/Two_River_Mushroom_Logo.png?height=64&v=1704324073">
+<link rel="stylesheet" href="assets/site.css">
+</head>
+<body data-page="shop">
+<div id="site-header"></div>
+
+<main class="wrap" style="padding:32px 28px 80px">
+  <div class="crumb" id="crumb"><a href="shop.html">Shop</a> &nbsp;/&nbsp; <span id="crumbName"></span></div>
+  <div class="pdp" id="pdp"></div>
+  <div style="margin-top:80px" id="relatedWrap">
+    <h2 style="font-size:30px;margin:0 0 24px">You might also like</h2>
+    <div class="grid grid-3" id="related"></div>
+  </div>
+</main>
+
+<div id="site-footer"></div>
+
+<script src="assets/data.js"></script>
+<script>
+  let pdpQty = 1, activeImg = 0, product = null;
+  function getParam(k){ return new URLSearchParams(location.search).get(k); }
+
+  function renderPDP(){
+    const galleryThumbs = product.img.length > 1
+      ? `<div class="pdp-thumbs">${product.img.map((src,i)=>
+          `<div class="pdp-thumb ${i===activeImg?'active':''}" data-i="${i}"><img src="${src}" alt=""></div>`).join('')}</div>`
+      : '';
+    const catLabel = (TRM.CATS.find(c=>c.key===product.cat)||{}).label || product.cat;
+    const tag = product.type === 'fresh' ? `${catLabel} · USDA Organic`
+              : product.type === 'broth' ? `Mushroom Broth · ${product.pack}`
+              : product.type === 'csa' ? 'CSA Share' : 'Merchandise';
+    const buy = product.soldOut
+      ? `<div class="soldout-banner">Currently sold out — check back soon</div>`
+      : `<div class="pdp-buy">
+           <div class="qty">
+             <button id="dec">−</button><span id="qty">${pdpQty}</span><button id="inc">+</button>
+           </div>
+           <button class="btn btn-terra" style="flex:1;justify-content:center" id="addBtn">Add to cart</button>
+         </div>`;
+    const pickup = product.type === 'fresh' || product.type === 'merch' || product.type === 'csa'
+      ? `Local farm pick-up · Mon–Sat 10–4`
+      : `Ships free nationwide · shelf-stable`;
+    const subprice = product.type === 'broth' ? ' · per pack' : product.type === 'csa' ? ' · full season' : ' · per ½ lb';
+
+    document.getElementById('pdp').innerHTML = `
+      <div class="pdp-gallery">
+        <div class="pdp-main"><img id="mainImg" src="${product.img[activeImg]}" alt="${product.name}"></div>
+        ${galleryThumbs}
+      </div>
+      <div>
+        <div class="eyebrow" style="color:var(--sage);margin-bottom:14px">${tag}</div>
+        <h1>${product.name}</h1>
+        <div class="priceblock">${TRM.money(product.price)}<small>${subprice}</small></div>
+        <p class="blurb">${product.blurb}</p>
+        <div class="flavor-box">
+          <div class="eyebrow">${product.type==='fresh'?'Flavor &amp; texture':'Why you’ll love it'}</div>
+          ${product.flavor.map(f=>`<div class="flavor-row">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#6a7850" stroke-width="2.4"><path d="M20 6L9 17l-5-5"/></svg>${f}</div>`).join('')}
+        </div>
+        ${buy}
+        <div class="pickup-note">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#6a7850" stroke-width="1.8"><path d="M3 12h18M3 12l4-4M3 12l4 4"/></svg>${pickup}
+        </div>
+      </div>`;
+
+    if(product.img.length > 1){
+      document.querySelectorAll('.pdp-thumb').forEach(t => t.onclick = () => {
+        activeImg = +t.dataset.i;
+        document.getElementById('mainImg').src = product.img[activeImg];
+        document.querySelectorAll('.pdp-thumb').forEach(x=>x.classList.remove('active'));
+        t.classList.add('active');
+      });
+    }
+    if(!product.soldOut){
+      document.getElementById('inc').onclick = () => { pdpQty++; document.getElementById('qty').textContent = pdpQty; };
+      document.getElementById('dec').onclick = () => { if(pdpQty>1){ pdpQty--; document.getElementById('qty').textContent = pdpQty; } };
+      document.getElementById('addBtn').onclick = () => TRMcart.add(product.id, pdpQty);
+    }
+  }
+
+  window.TRMpageInit = function(){
+    const id = getParam('id');
+    product = TRM.find(id) || TRM.PRODUCTS[0];
+    document.title = product.name + ' · Two River Gourmet Mushroom';
+    document.getElementById('crumbName').textContent = product.name;
+    renderPDP();
+    // related: same category, then fill from fresh products
+    let rel = TRM.catalog().filter(p => p.id !== product.id && p.cat === product.cat);
+    if(rel.length < 3) rel = rel.concat(TRM.PRODUCTS.filter(p => p.id !== product.id && p.cat !== product.cat));
+    document.getElementById('related').innerHTML = rel.slice(0,3).map(TRMcard).join('');
+  };
+</script>
+<script src="assets/site.js"></script>
+</body>
+</html>

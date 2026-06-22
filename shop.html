@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Fresh Organic Mushrooms · Two River Gourmet Mushroom</title>
+<meta name="description" content="Shop fresh USDA Organic gourmet mushrooms — oyster, lion's mane, maitake, shiitake, chestnut and more. Local farm pick-up in Millstone, NJ.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,400;0,500;0,600;1,400&family=Hanken+Grotesk:wght@400;500;600;700&family=Spline+Sans+Mono:wght@500;600&display=swap" rel="stylesheet">
+<link rel="icon" type="image/png" href="https://www.tworivermushroom.com/cdn/shop/files/Two_River_Mushroom_Logo.png?height=64&v=1704324073">
+<link rel="stylesheet" href="assets/site.css">
+</head>
+<body data-page="shop">
+<div id="site-header"></div>
+
+<main>
+  <section class="pagehead tall">
+    <img class="bgimg" src="https://cdn.shopify.com/s/files/1/0634/0906/2084/files/oyster-mushroom-1296x728-header.webp?width=1400&v=1716475350" alt="">
+    <div class="wrap inner">
+      <div class="eyebrow">Pick up fresh today</div>
+      <h1>Fresh Mushrooms</h1>
+      <p>Local farm pick-up only — to protect quality, we don’t ship fresh mushrooms. Choose pick-up at checkout. (Looking for broth? <a href="broth.html" style="color:#e0a06f;text-decoration:underline">It ships free →</a>)</p>
+    </div>
+  </section>
+
+  <section class="wrap" style="padding:28px 28px 80px">
+    <div class="toolbar">
+      <div class="chips" id="chips"></div>
+      <div class="tools-right">
+        <div class="search-box">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#8a7c66" stroke-width="1.8"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4-4"/></svg>
+          <input id="search" placeholder="Search…" aria-label="Search mushrooms">
+        </div>
+        <select class="sort-sel" id="sort" aria-label="Sort">
+          <option value="featured">Featured</option>
+          <option value="price-asc">Price: low to high</option>
+          <option value="price-desc">Price: high to low</option>
+          <option value="az">Alphabetical</option>
+        </select>
+      </div>
+    </div>
+    <div class="result-count" id="count"></div>
+    <div class="grid grid-3" id="grid"></div>
+  </section>
+</main>
+
+<div id="site-footer"></div>
+
+<script src="assets/data.js"></script>
+<script>
+  let state = { cat:'All', sort:'featured', search:'' };
+  function renderChips(){
+    document.getElementById('chips').innerHTML = TRM.CATS.map(c =>
+      `<button class="chip ${state.cat===c.key?'active':''}" data-cat="${c.key}">${c.label}</button>`).join('');
+    document.querySelectorAll('.chip').forEach(ch => ch.onclick = () => { state.cat = ch.dataset.cat; render(); });
+  }
+  function render(){
+    let list = TRM.PRODUCTS.slice();
+    if(state.cat !== 'All') list = list.filter(p => p.cat === state.cat);
+    if(state.search.trim()){
+      const q = state.search.toLowerCase();
+      list = list.filter(p => p.name.toLowerCase().includes(q) || (p.note||'').toLowerCase().includes(q));
+    }
+    if(state.sort==='price-asc') list.sort((a,b)=>a.price-b.price);
+    else if(state.sort==='price-desc') list.sort((a,b)=>b.price-a.price);
+    else if(state.sort==='az') list.sort((a,b)=>a.name.localeCompare(b.name));
+    const label = (TRM.CATS.find(c=>c.key===state.cat)||{}).label;
+    document.getElementById('count').textContent = `${list.length} products · ${label}`;
+    document.getElementById('grid').innerHTML = list.length
+      ? list.map(TRMcard).join('')
+      : `<p style="grid-column:1/-1;color:var(--soft);padding:40px 0">No mushrooms match that search.</p>`;
+    renderChips();
+  }
+  window.TRMpageInit = function(){
+    renderChips(); render();
+    document.getElementById('search').oninput = e => { state.search = e.target.value; render(); };
+    document.getElementById('sort').onchange = e => { state.sort = e.target.value; render(); };
+  };
+</script>
+<script src="assets/site.js"></script>
+</body>
+</html>
