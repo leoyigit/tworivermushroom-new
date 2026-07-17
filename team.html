@@ -8,8 +8,9 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,400;0,500;0,600;1,400&family=Hanken+Grotesk:wght@400;500;600;700&family=Spline+Sans+Mono:wght@500;600&display=swap" rel="stylesheet">
-<link rel="icon" type="image/png" href="https://www.tworivermushroom.com/cdn/shop/files/Two_River_Mushroom_Logo.png?height=64&v=1704324073">
+<link rel="icon" type="image/png" href="assets/logo.png">
 <link rel="stylesheet" href="assets/site.css">
+<link rel="stylesheet" href="assets/theme-river.css">
 </head>
 <body data-page="team">
 <div id="site-header"></div>
@@ -25,7 +26,7 @@
 
   <section style="max-width:900px;margin:0 auto;padding:56px 28px 24px">
     <div style="background:var(--paper);border:1px solid var(--line2);border-radius:20px;overflow:hidden;display:grid;grid-template-columns:auto 1fr;align-items:stretch">
-      <div style="width:220px;background:linear-gradient(135deg,#e3d4b6,#d2bf99);display:flex;align-items:center;justify-content:center;font-family:var(--serif);font-size:56px;color:#6b5a3e">KC</div>
+      <div style="width:220px;background:linear-gradient(135deg,var(--bg2),var(--line));display:flex;align-items:center;justify-content:center;font-family:var(--serif);font-size:56px;color:var(--terra)">KC</div>
       <div style="padding:36px">
         <div class="eyebrow" style="color:var(--terra);margin-bottom:10px;font-size:11px">Founder</div>
         <h2 style="font-size:30px;margin:0 0 12px">KC Sullivan</h2>
@@ -46,7 +47,7 @@
   window.TRMpageInit = function(){
     document.getElementById('teamGrid').innerHTML = TRM.TEAM.map(t =>
       `<div class="card" style="cursor:default">
-        <div style="aspect-ratio:4/3;background:linear-gradient(135deg,#e3d4b6,#d2bf99);display:flex;align-items:center;justify-content:center;font-family:var(--serif);font-size:40px;color:#6b5a3e">${t.initials}</div>
+        <div style="aspect-ratio:4/3;background:linear-gradient(135deg,var(--bg2),var(--line));display:flex;align-items:center;justify-content:center;font-family:var(--serif);font-size:40px;color:var(--terra)">${t.initials}</div>
         <div class="card-body"><div class="card-cat">${t.role}</div><div style="font-family:var(--serif);font-size:20px">${t.name}</div></div>
       </div>`).join('');
   };

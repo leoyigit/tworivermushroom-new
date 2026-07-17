@@ -5,8 +5,10 @@ const img = (f, w) => 'https://cdn.shopify.com/s/files/1/0634/0906/2084/files/' 
 const TRM = {
   // ---- shared imagery ----
   IMG: {
-    logo: CDN + 'Two_River_Mushroom_Logo.png?height=120&v=1704324073',
-    logoLight: CDN + 'Two_River_Mushroom_Logo.png?height=120&v=1704324073',
+    logo: 'assets/logo.png',           // round badge — header nav (big)
+    logoText: 'assets/logo-text.png',  // wordmark — kept for alternate uses
+    logoBadge: 'assets/logo.png',      // round badge — footer
+    logoLight: 'assets/logo.png',
     hero: CDN + 'organic_mushrooms.jpg?width=1600&v=1719253562',
     broth: 'https://cdn.shopify.com/s/files/1/0634/0906/2084/files/tworiverbroth-8374_1.jpg?width=1200&v=1704327414',
     farm: 'https://cdn.shopify.com/s/files/1/0634/0906/2084/files/IMG_3448.jpg?width=900&v=1716421280',
@@ -156,9 +158,42 @@ const TRM = {
   ],
 
   TEAM: [
-    { initials:'KC', role:'Founder', name:'KC Sullivan' },
-    { initials:'HG', role:'Head Grower', name:'The Grow Team' },
-    { initials:'MW', role:'Markets & Wholesale', name:'Farm Stand Crew' }
+    { initials:'KS', role:'Founder', name:'KC Sullivan' },
+    { initials:'KC', role:'Co-Owner', name:'Kurt Cavano' },
+    { initials:'SS', role:'Co-Owner', name:'Scott Szegeski' }
+  ],
+
+  // farmers' market season (from the live site — 2026 dates to confirm with the farm)
+  MARKETS: [
+    { name:'Brick Farmers’ Market', when:'Saturdays · May – late Sept', time:'8:30AM – 1:30PM', where:'Windward Beach Park, Brick NJ' },
+    { name:'Fair Haven Farmers’ Market', when:'Select dates · May – Nov', time:'9AM – 1PM', where:'Willow Street, Fair Haven NJ' },
+    { name:'Ocean Grove Farmers’ Market', when:'Thursdays · June – mid Sept', time:'10AM – 2PM', where:'39 Pilgrim Pathway, Ocean Grove NJ' },
+    { name:'Summer Fancy Food Show', when:'June 23 – 25', time:'Trade show', where:'Javits Center, NYC' }
+  ],
+
+  // CSA pick-up stops (consolidated from the live site's per-neighborhood pages)
+  CSA_STOPS: [
+    { name:'Stanton Street CSA', area:'Lower East Side, Manhattan' },
+    { name:'Clinton Hill CSA', area:'Brooklyn' },
+    { name:'Prospect Park CSA', area:'Brooklyn' },
+    { name:'Central Brooklyn CSA', area:'Brooklyn' },
+    { name:'Dutch Kills CSA', area:'Long Island City, Queens' },
+    { name:'Hellgate CSA', area:'Astoria, Queens' },
+    { name:'Google CSA', area:'Workplace program, NYC' }
+  ],
+
+  // sample locator entries for design review — real 40+ partner list to come from the farm
+  LOCATIONS: [
+    { name:'Mighty Dare Farm — pick-up barn', town:'Millstone', type:'farm' },
+    { name:'Farm-to-table restaurant', town:'Red Bank', type:'restaurant' },
+    { name:'Seasonal tasting kitchen', town:'Asbury Park', type:'restaurant' },
+    { name:'Ramen bar', town:'New Brunswick', type:'restaurant' },
+    { name:'Sushi kitchen', town:'Princeton', type:'restaurant' },
+    { name:'Independent specialty grocer', town:'Montclair', type:'grocer' },
+    { name:'Organic market & co-op', town:'Princeton', type:'grocer' },
+    { name:'Neighborhood farm market', town:'Freehold', type:'grocer' },
+    { name:'Saturday farmers’ market', town:'Collingswood', type:'market' },
+    { name:'Sunday farmers’ market', town:'Red Bank', type:'market' }
   ],
 
   PARTNERS: [

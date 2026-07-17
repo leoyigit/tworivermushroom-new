@@ -3,51 +3,149 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Mushroom Broth · sofi™ Gold Winner · Two River Gourmet Mushroom</title>
-<meta name="description" content="Award-winning organic mushroom broth — Lion's Mane &amp; Shiitake, Maitake, and Chaga. Sip it, build a soup, or use it as stock. Ships free.">
+<title>Mushroom Broth · sofi™ Gold &amp; NEXTY Winner · Two River Gourmet Mushroom</title>
+<meta name="description" content="Award-winning organic mushroom broth — Lion's Mane &amp; Shiitake, Maitake, and Chaga. One-time or subscribe &amp; save, ships free nationwide.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,400;0,500;0,600;1,400&family=Hanken+Grotesk:wght@400;500;600;700&family=Spline+Sans+Mono:wght@500;600&display=swap" rel="stylesheet">
-<link rel="icon" type="image/png" href="https://www.tworivermushroom.com/cdn/shop/files/Two_River_Mushroom_Logo.png?height=64&v=1704324073">
+<link rel="icon" type="image/png" href="assets/logo.png">
 <link rel="stylesheet" href="assets/site.css">
+<link rel="stylesheet" href="assets/theme-river.css">
 </head>
 <body data-page="broth">
 <div id="site-header"></div>
 
 <main>
-  <section class="pagehead" style="padding:0">
-    <div class="wrap" style="display:grid;grid-template-columns:1fr 1fr;align-items:center;gap:0">
-      <div style="padding:72px 0">
-        <div class="pill">★ 2023 sofi™ Gold Award Winner</div>
-        <h1 style="font-size:60px;color:#f4ecdc;margin:0 0 20px">Mushroom Broth</h1>
-        <p style="color:#c9bba2;font-size:18px;line-height:1.65;max-width:420px;margin:0 0 30px">Made with organic Lion’s Mane, Shiitake, and 20 other simple, clean ingredients. Sip it on its own, build a soup, or use it as the richest stock you’ve ever cooked with.</p>
-        <div style="display:flex;align-items:center;gap:18px;flex-wrap:wrap">
-          <a class="btn btn-peach" href="#shop-broth">Shop the broth</a>
-          <span style="color:#cbbda3;font-size:14px">Shelf-stable · ships free</span>
-        </div>
-      </div>
-      <div style="align-self:stretch;min-height:480px;background:#15100b">
-        <img src="https://cdn.shopify.com/s/files/1/0634/0906/2084/files/tworiverbroth-8374_1.jpg?width=1200&v=1704327414" alt="Two River Mushroom Broth" style="width:100%;height:100%;object-fit:cover">
+  <!-- STORY-FIRST HERO -->
+  <section class="hero" style="min-height:520px">
+    <img class="hero-img" src="https://cdn.shopify.com/s/files/1/0634/0906/2084/files/tworiverbroth-8374_1.jpg?width=1600&v=1704327414" alt="Two River Mushroom Broth simmering in the kitchen">
+    <div class="hero-shade"></div>
+    <div class="wrap hero-inner" style="padding-bottom:60px">
+      <div class="pill" style="margin-bottom:20px">★ sofi™ Gold 2023 · NEXTY 2026</div>
+      <h1 style="font-size:68px">Broth worth slowing down for.</h1>
+      <div class="hero-actions">
+        <a class="btn btn-peach" href="#subscribe">Subscribe &amp; save</a>
+        <a class="btn btn-ghost-light" href="#subscribe">Shop one-time</a>
+        <span>Organic Lion’s Mane, Shiitake, Maitake and Chaga — brewed slow with 20 clean, simple ingredients. Shelf-stable, and it ships free nationwide.</span>
       </div>
     </div>
   </section>
 
-  <section class="wrap" style="padding:72px 28px;display:grid;grid-template-columns:repeat(3,1fr);gap:24px">
+  <!-- RITUAL: SIP / SOUP / STOCK -->
+  <section class="wrap" style="padding:64px 28px;display:grid;grid-template-columns:repeat(3,1fr);gap:24px">
     <div class="center" style="padding:0 12px"><div style="font-family:var(--serif);font-size:36px;color:var(--terra);margin-bottom:10px">Sip</div><p style="font-size:15px;line-height:1.6;color:var(--muted)">Warm and savory, ready to drink straight from the mug.</p></div>
     <div class="center" style="padding:0 12px;border-left:1px solid var(--line);border-right:1px solid var(--line)"><div style="font-family:var(--serif);font-size:36px;color:var(--terra);margin-bottom:10px">Soup</div><p style="font-size:15px;line-height:1.6;color:var(--muted)">A deeply flavored base for ramen, risotto, and grain bowls.</p></div>
     <div class="center" style="padding:0 12px"><div style="font-family:var(--serif);font-size:36px;color:var(--terra);margin-bottom:10px">Stock</div><p style="font-size:15px;line-height:1.6;color:var(--muted)">Replace water and watch every dish gain umami depth.</p></div>
   </section>
 
-  <section id="shop-broth" class="wrap" style="padding:8px 28px 24px">
-    <div class="section-head"><div><div class="eyebrow" style="color:var(--terra)">Free shipping</div><h2>Choose your broth</h2></div></div>
-    <div class="grid grid-4" id="brothGrid"></div>
+  <!-- PURCHASE MODULE -->
+  <section id="subscribe" class="wrap" style="padding:8px 28px 56px">
+    <div class="section-head">
+      <div>
+        <div class="eyebrow">Free shipping, always</div>
+        <h2>Choose your broth</h2>
+      </div>
+    </div>
+    <div class="buy-wrap">
+      <div class="buy-media"><img id="buyImg" src="" alt="Selected broth pack"></div>
+      <div class="buy-panel">
+        <div class="buy-step">1 · Flavor</div>
+        <div id="flavorOpts"></div>
+        <div class="buy-step">2 · How often</div>
+        <div class="mode-grid">
+          <button class="mode-card" id="modeOnce" type="button">
+            <b>One-time</b>
+            <span>Just this delivery</span>
+            <div class="mp" id="priceOnce"></div>
+          </button>
+          <button class="mode-card active" id="modeSub" type="button">
+            <b>Subscribe<span class="save-tag">Save 10%</span></b>
+            <span>Skip, swap or cancel anytime</span>
+            <div class="mp" id="priceSub"></div>
+          </button>
+        </div>
+        <div id="freqBlock">
+          <div class="buy-step">3 · Delivery every</div>
+          <div class="freq-row">
+            <button class="freq-chip" data-freq="2" type="button">2 weeks</button>
+            <button class="freq-chip active" data-freq="4" type="button">4 weeks</button>
+            <button class="freq-chip" data-freq="8" type="button">8 weeks</button>
+          </div>
+          <ul class="perk-list">
+            <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M5 13l4 4L19 7"/></svg>10% off every delivery, free shipping always</li>
+            <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M5 13l4 4L19 7"/></svg>Skip, swap flavors or cancel anytime — no commitment</li>
+            <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M5 13l4 4L19 7"/></svg>First taste of new flavors before anyone else</li>
+          </ul>
+        </div>
+        <button class="btn btn-terra buy-cta" id="buyBtn" type="button">Add to basket</button>
+        <div class="buy-note">Subscription terms shown for design review — final pricing &amp; frequencies TBD</div>
+      </div>
+    </div>
   </section>
 
-  <section style="background:#e7dcc6;padding:64px 28px;margin-top:48px">
+  <!-- STARTER BOX + BUILD YOUR OWN -->
+  <section class="wrap section" style="padding-top:16px">
+    <div class="section-head">
+      <div>
+        <div class="eyebrow">New here?</div>
+        <h2>Start with a box</h2>
+      </div>
+    </div>
+    <div class="box-grid">
+      <div class="box-card">
+        <h3>The Starter Box</h3>
+        <p class="sub">All three flavors in one box — find your favorite, then let your subscription follow it.</p>
+        <ul class="box-list">
+          <li>Lion’s Mane &amp; Shiitake <span>× 2</span></li>
+          <li>Maitake <span>× 2</span></li>
+          <li>Chaga <span>× 2</span></li>
+        </ul>
+        <div class="swap-note"><b>Subscribers:</b> your Starter Box automatically switches to the flavor you love from the second delivery — or stays mixed. Your call, changeable anytime.</div>
+        <div class="box-foot">
+          <span class="box-price">$49 <small style="font:500 12px var(--sans);color:var(--soft)">· 6 cartons · ships free</small></span>
+          <button class="btn btn-terra" type="button" onclick="TRMcart.add('mushroom-broth-mixed-pack-6-pack-with-free-shipping',1)">Add Starter Box</button>
+        </div>
+      </div>
+      <div class="box-card">
+        <h3>Build your own</h3>
+        <p class="sub">Any six cartons, your mix. Same free shipping.</p>
+        <div id="byoRows"></div>
+        <div class="box-foot">
+          <span class="box-price">$49 <small style="font:500 12px var(--sans);color:var(--soft)" id="byoCount">· 0 of 6 picked</small></span>
+          <button class="btn btn-terra" type="button" id="byoBtn" disabled style="opacity:.45">Add your box</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- HOW IT'S MADE -->
+  <section style="background:var(--bg2);padding:64px 28px">
     <div style="max-width:760px;margin:0 auto;text-align:center">
       <div class="eyebrow" style="color:var(--sage);margin-bottom:16px">22 clean ingredients · nothing weird</div>
-      <h2 style="font-size:34px;line-height:1.2;margin:0 0 18px">Organic Lion’s Mane &amp; Shiitake do the heavy lifting</h2>
-      <p style="font-size:16px;line-height:1.7;color:var(--muted)">Everything else is pantry-simple — vegetables, herbs, and aromatics. No fillers, no mystery powders. Just the broth a sofi™ jury named the best in the country.</p>
+      <h2 style="font-size:34px;line-height:1.2;margin:0 0 18px">Organic mushrooms do the heavy lifting</h2>
+      <p style="font-size:16px;line-height:1.7;color:var(--muted);margin-bottom:28px">Grown on our farm, brewed slow in small batches. Everything else is pantry-simple — vegetables, herbs, and aromatics. No fillers, no mystery powders. Just the broth a sofi™ jury named the best in the country, and a NEXTY panel agreed.</p>
+      <a class="link-arrow" href="grow.html">See how we grow
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+    </div>
+  </section>
+
+  <!-- CHEF AUTHORITY -->
+  <section class="wrap" style="padding:64px 28px 0">
+    <div class="press-strip" style="border-bottom:none">
+      <div class="eyebrow" style="color:var(--sage)">Chef-approved</div>
+      <div style="max-width:680px;margin:0 auto;text-align:center">
+        <p style="font-family:var(--serif);font-size:22px;line-height:1.5;color:var(--ink2);margin-bottom:18px">Derek Sarno has spent his career proving mushrooms can be the centre of the plate — and he points home cooks straight to Two River for the real thing.</p>
+        <a class="link-arrow" href="derek.html">Derek Sarno’s picks
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- PRESS -->
+  <section class="wrap" style="padding:24px 28px 80px">
+    <div class="press-strip">
+      <div class="eyebrow" style="color:var(--sage)">Awards &amp; press</div>
+      <div class="press-row" id="pressRow"></div>
     </div>
   </section>
 </main>
@@ -57,7 +155,79 @@
 <script src="assets/data.js"></script>
 <script>
   window.TRMpageInit = function(){
-    document.getElementById('brothGrid').innerHTML = TRM.BROTH.map(TRMcard).join('');
+    /* ---- purchase module ---- */
+    var state = { id: TRM.BROTH[0].id, mode: 'sub', freq: 4 };
+    var money = TRM.money;
+
+    function product(){ return TRM.BROTH.find(function(p){ return p.id === state.id; }); }
+    function subPrice(p){ return p.price * 0.9; }
+
+    function render(){
+      var p = product();
+      document.getElementById('buyImg').src = p.img[0];
+      document.getElementById('flavorOpts').innerHTML = TRM.BROTH.map(function(b){
+        return '<button type="button" class="flavor-opt' + (b.id === state.id ? ' active' : '') + '" data-id="' + b.id + '">' +
+          '<span>' + b.name + '<small>' + b.pack + '</small></span><span class="p">' + money(b.price) + '</span></button>';
+      }).join('');
+      document.getElementById('priceOnce').textContent = money(p.price);
+      document.getElementById('priceSub').textContent = money(subPrice(p));
+      document.getElementById('modeOnce').classList.toggle('active', state.mode === 'once');
+      document.getElementById('modeSub').classList.toggle('active', state.mode === 'sub');
+      document.getElementById('freqBlock').style.display = state.mode === 'sub' ? '' : 'none';
+      document.getElementById('buyBtn').textContent = state.mode === 'sub'
+        ? 'Subscribe — ' + money(subPrice(p)) + ' every ' + state.freq + ' weeks'
+        : 'Add to basket — ' + money(p.price);
+      document.querySelectorAll('.flavor-opt').forEach(function(el){
+        el.onclick = function(){ state.id = el.dataset.id; render(); };
+      });
+    }
+    document.getElementById('modeOnce').onclick = function(){ state.mode = 'once'; render(); };
+    document.getElementById('modeSub').onclick = function(){ state.mode = 'sub'; render(); };
+    document.querySelectorAll('.freq-chip').forEach(function(el){
+      el.onclick = function(){
+        state.freq = +el.dataset.freq;
+        document.querySelectorAll('.freq-chip').forEach(function(c){ c.classList.toggle('active', c === el); });
+        render();
+      };
+    });
+    document.getElementById('buyBtn').onclick = function(){ TRMcart.add(state.id, 1); };
+    render();
+
+    /* ---- build your own box ---- */
+    var byo = {};
+    TRM.BROTH.slice(0,3).forEach(function(b){ byo[b.id] = 0; });
+    function byoTotal(){ return Object.values(byo).reduce(function(a,b){ return a+b; },0); }
+    function renderByo(){
+      document.getElementById('byoRows').innerHTML = TRM.BROTH.slice(0,3).map(function(b){
+        return '<div class="byo-row"><b>' + b.name + '</b>' +
+          '<span class="miniqty">' +
+          '<button type="button" data-id="' + b.id + '" data-d="-1">−</button>' +
+          '<span>' + byo[b.id] + '</span>' +
+          '<button type="button" data-id="' + b.id + '" data-d="1">+</button></span></div>';
+      }).join('');
+      var t = byoTotal();
+      document.getElementById('byoCount').textContent = '· ' + t + ' of 6 picked';
+      var btn = document.getElementById('byoBtn');
+      btn.disabled = t !== 6;
+      btn.style.opacity = t === 6 ? '1' : '.45';
+      document.querySelectorAll('#byoRows button').forEach(function(el){
+        el.onclick = function(){
+          var next = byo[el.dataset.id] + (+el.dataset.d);
+          if(next < 0 || byoTotal() + (+el.dataset.d) > 6) return;
+          byo[el.dataset.id] = next;
+          renderByo();
+        };
+      });
+    }
+    document.getElementById('byoBtn').onclick = function(){
+      TRMcart.add('mushroom-broth-mixed-pack-6-pack-with-free-shipping', 1);
+    };
+    renderByo();
+
+    /* ---- press ---- */
+    document.getElementById('pressRow').innerHTML = TRM.MEDIA.map(function(m){
+      return '<div class="press-item"><div class="outlet">' + m.outlet + ' · ' + m.date + '</div><p>“' + m.quote + '”</p></div>';
+    }).join('');
   };
 </script>
 <script src="assets/site.js"></script>

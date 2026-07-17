@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Mushroom CSA · Two River Gourmet Mushroom</title>
+<meta name="description" content="A season of organic gourmet mushrooms — 11 biweekly deliveries of our Forest Medley to CSA pick-up stops across NYC, June through October.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,400;0,500;0,600;1,400&family=Hanken+Grotesk:wght@400;500;600;700&family=Spline+Sans+Mono:wght@500;600&display=swap" rel="stylesheet">
+<link rel="icon" type="image/png" href="assets/logo.png">
+<link rel="stylesheet" href="assets/site.css">
+<link rel="stylesheet" href="assets/theme-river.css">
+</head>
+<body data-page="csa">
+<div id="site-header"></div>
+
+<main>
+  <section class="pagehead">
+    <div class="wrap inner">
+      <div class="eyebrow">Community supported agriculture</div>
+      <h1>A season of mushrooms</h1>
+      <p>11 biweekly deliveries of our organic Forest Medley — June through October, picked the morning they leave the farm.</p>
+    </div>
+  </section>
+
+  <!-- HOW IT WORKS -->
+  <section class="wrap" style="max-width:860px;padding:56px 28px 24px">
+    <div class="step">
+      <div class="step-num">1</div>
+      <div>
+        <h3>Join your neighborhood stop</h3>
+        <p>We partner with CSA pick-up stops across New York City. Choose yours below and reserve a share for the season.</p>
+      </div>
+    </div>
+    <div class="step">
+      <div class="step-num">2</div>
+      <div>
+        <h3>Pick up every other week</h3>
+        <p>From early June to late October, a 1 lb Forest Medley — oyster, shiitake, lion’s mane, king and chestnut, whatever is at peak that morning — arrives at your stop. 11 deliveries in all.</p>
+      </div>
+    </div>
+    <div class="step" style="border-bottom:none">
+      <div class="step-num">3</div>
+      <div>
+        <h3>Cook the whole forest</h3>
+        <p>Every share is different because every harvest is different. Our recipes and fun-facts pages keep the ideas coming all season.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- STOPS -->
+  <section class="wrap section" style="padding-top:16px">
+    <div class="section-head">
+      <div>
+        <div class="eyebrow">Pick-up stops</div>
+        <h2>Find your CSA</h2>
+      </div>
+    </div>
+    <div class="loc-grid" id="csaGrid"></div>
+    <div class="loc-note">Program as offered on the current site — 2026 season &amp; stops being confirmed with the farm</div>
+  </section>
+
+  <!-- SHARE CTA -->
+  <section class="wrap" style="padding-bottom:80px">
+    <div class="box-grid" style="grid-template-columns:1fr;max-width:720px;margin:0 auto">
+      <div class="box-card">
+        <h3>2026 CSA Share</h3>
+        <p class="sub">One share = 11 biweekly deliveries of the 1 lb organic Forest Medley, June – October.</p>
+        <ul class="box-list">
+          <li>Deliveries per season <span>11</span></li>
+          <li>Share size <span>1 lb Forest Medley</span></li>
+          <li>Season <span>June – October</span></li>
+        </ul>
+        <div class="box-foot">
+          <span class="box-price">$176 <small style="font:500 12px var(--sans);color:var(--soft)">· per season share</small></span>
+          <a class="btn btn-terra" href="product.html?id=2025-clinton-hill-csa">Reserve a share</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<div id="site-footer"></div>
+
+<script src="assets/data.js"></script>
+<script>
+  window.TRMpageInit = function(){
+    document.getElementById('csaGrid').innerHTML = TRM.CSA_STOPS.map(function(s){
+      return '<div class="loc-card"><div class="loc-type">CSA stop</div><b>' + s.name + '</b><div class="town">' + s.area + '</div></div>';
+    }).join('');
+  };
+</script>
+<script src="assets/site.js"></script>
+</body>
+</html>

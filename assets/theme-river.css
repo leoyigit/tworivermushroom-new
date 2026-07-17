@@ -1,0 +1,127 @@
+/* ============ Two River — canonical brand theme (home page pilot / style tile) ============
+   Source of truth: feedback/files/Two-River-Color-Palette.html (merchant's color system).
+   Surfaces  Paper #F6F3EC (~75%) · Chalk #FAF8F3 (cards) · Oat #ECE6D8 (alt bands) · Ink #2B2723 (inverse)
+   Brand     buttons Teal-600 #357784 + Chalk text (AA) · links/emphasis Teal-700 #2C6069 · hover Teal-900 #1D3A40
+             #53ABBE (Teal-400) reserved for focus rings & large/photographic fills
+   Accents   Moss #6B744F (organic cues) · Bark #8A6A49 (earth bands) · Amber #B4792A (rare, ~1%)
+   States    success #4E7A4F · warning #B4792A · error #A8452F
+   Note: dark blocks on Ink per the sheet; logo slate (≈#405060) pitched to merchant as optional 6th ramp. */
+
+:root{
+  --bg:#f6f3ec; --bg2:#ece6d8; --paper:#faf8f3; --ink:#2b2723; --ink2:#38332c;
+  --muted:#756e62; --soft:#9a9385; --faint:#c4bbaa; --line:#ded7c8; --line2:#ece6d8;
+  --dark:#2b2723; --dark2:#38332c; --dark3:#2b2723;
+  --terra:#2c6069; --terra-d:#1d3a40;      /* link / emphasis teal (AA on Paper) */
+  --btn:#357784; --btn-h:#2c6069;          /* primary CTA teal (AA with Chalk text) */
+  --peach:#357784;
+  --gold:#b4792a; --sage:#6b744f;          /* amber (rare) · moss (organic cues) */
+  --cream-d:#ece6d8;
+  --bark:#8a6a49; --bark-d:#6f543a;        /* earth bands / imagery warmth */
+  --ice:#a6d2da;                            /* Teal-200 — light accent on Ink blocks */
+  --focus:#53abbe;                          /* focus rings only (Teal-400 brand-bright) */
+  --success:#4e7a4f; --warning:#b4792a; --error:#a8452f;
+}
+
+::selection{background:var(--btn);color:#faf8f3}
+:focus-visible{outline:2px solid var(--focus);outline-offset:2px}
+
+/* buttons — Teal 600 with Chalk text per the sheet's accessibility callout */
+.btn-peach{background:var(--btn);color:#faf8f3}
+.btn-peach:hover{background:var(--btn-h);color:#faf8f3}
+.btn-terra{background:var(--btn);color:#faf8f3}
+.btn-terra:hover{background:var(--btn-h)}
+.btn-dark{background:var(--ink);color:#faf8f3}
+.btn-dark:hover{background:var(--btn)}
+.btn-ghost{border-color:var(--ink);color:var(--ink)}
+.btn-ghost:hover{background:var(--ink);color:var(--bg)}
+
+/* announcement — quiet Ink band, Chalk text */
+.announce{background:var(--ink);color:#faf8f3}
+.announce a{color:var(--ice)}
+
+/* header — Paper, understated; links go teal on hover */
+.site-header{background:rgba(246,243,236,.94);border-bottom:1px solid var(--line)}
+.nav-link{color:var(--ink)}
+.nav-link:hover,.nav-link.active{color:var(--terra)}
+.icon-btn:hover{background:var(--bg2)}
+.dropdown{background:var(--paper);border:1px solid var(--line);box-shadow:0 14px 30px -18px rgba(43,39,35,.25)}
+.dropdown a{color:var(--ink)}
+.dropdown a:hover{background:var(--bg2);color:var(--terra)}
+.cart-count{background:var(--terra)}
+
+/* inner page headers on Ink */
+.pagehead{background:var(--ink)}
+.pagehead .eyebrow{color:var(--ice)}
+.pagehead h1{color:#faf8f3}
+.pagehead p{color:rgba(250,248,243,.8)}
+
+/* hero — warm-ink shade, calm; light teal eyebrow */
+.hero{background:var(--ink)}
+.hero-shade{background:linear-gradient(180deg,rgba(43,39,35,.28),rgba(43,39,35,.48) 50%,rgba(43,39,35,.9))}
+.hero h1{color:#faf8f3}
+.hero .eyebrow{color:var(--ice)}
+.hero-actions span{color:rgba(250,248,243,.85)}
+
+/* section accents — moss eyebrows (organic cue), teal links */
+.section-head .eyebrow{color:var(--sage)}
+.split .eyebrow{color:var(--sage)}
+.link-arrow{color:var(--terra)}
+.link-arrow:hover{color:var(--terra-d)}
+.stat-num{color:var(--terra)}
+
+/* cards — hairline borders, no drop shadows (calm-editorial) */
+.card{border-color:var(--line2)}
+.card:hover{border-color:var(--faint);box-shadow:none}
+.recipe-card:hover{border-color:var(--faint)}
+.badge-sold{background:var(--error);color:#fbf3e4}
+.add-btn{background:var(--ink);color:#faf8f3}
+.add-btn:hover{background:var(--btn)}
+
+/* benefit bar — flat, bordered, shadow-free */
+.benefit-bar{box-shadow:none}
+.benefit-icon{color:var(--terra)}
+
+/* broth band — Bark earth warmth, white type; amber reserved for the award pill */
+.band{background:var(--bark)}
+.band-text h2{color:#faf8f3}
+.band-text p{color:rgba(250,248,243,.92)}
+.band-img{background:var(--bark-d)}
+.pill{background:var(--gold);color:#fbf3e4}
+.band .btn-peach{background:#faf8f3;color:var(--ink)}
+.band .btn-peach:hover{background:var(--ink);color:#faf8f3}
+
+/* founder quote band — Ink block, light-teal accents */
+.quote-band{background:var(--ink)}
+.quote-band .eyebrow,.quote-band .attr{color:var(--ice)}
+
+/* reviews — Oat alt band, amber stars (the palette's rare highlight) */
+.reviews{background:var(--bg2)}
+.stars{color:var(--gold)}
+
+/* footer — Ink inverse per the sheet, light-teal headings */
+.site-footer{background:var(--ink);color:rgba(250,248,243,.85)}
+.site-footer p{color:rgba(250,248,243,.85)}
+.foot-col h5{color:var(--ice)}
+.foot-col a{color:rgba(250,248,243,.85)}
+.foot-col a:hover{color:var(--ice)}
+.socials a{border-color:rgba(250,248,243,.3);color:#faf8f3}
+.socials a:hover{border-color:var(--ice);color:var(--ice);background:rgba(166,210,218,.08)}
+.footer-bottom{border-top:1px solid rgba(250,248,243,.18)}
+.footer-bottom .copy{color:rgba(250,248,243,.6)}
+.credit a{color:rgba(250,248,243,.9);font-weight:600;text-decoration:none}
+.credit a:hover{color:var(--ice)}
+.footer-brand img{background:#faf8f3;border-radius:50%;padding:2px}
+
+/* forms — brand-bright focus per the sheet's focus-ring token */
+.sub-form input:focus,.field input:focus,.field textarea:focus{border-color:var(--focus)}
+.subscribe .eyebrow{color:var(--sage)}
+
+/* cart drawer + mobile menu */
+.cart-overlay{background:rgba(43,39,35,.45)}
+.cart-drawer{box-shadow:-20px 0 60px -20px rgba(43,39,35,.4)}
+.cart-close:hover{background:var(--bg2)}
+.cart-line{border-bottom:1px solid var(--line)}
+.cart-foot{background:var(--bg2)}
+.miniqty,.qty{border-color:var(--faint)}
+.scroll::-webkit-scrollbar-thumb{background:var(--faint)}
+.mobile-menu .mgroup-label{color:var(--terra)}

@@ -3,13 +3,14 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Locations &amp; Partners · Two River Gourmet Mushroom</title>
+<title>Where to Buy · Two River Gourmet Mushroom</title>
 <meta name="description" content="Pick up at Mighty Dare Farm in Millstone, NJ, or find Two River on menus and shelves at 40+ spots across New Jersey.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,400;0,500;0,600;1,400&family=Hanken+Grotesk:wght@400;500;600;700&family=Spline+Sans+Mono:wght@500;600&display=swap" rel="stylesheet">
-<link rel="icon" type="image/png" href="https://www.tworivermushroom.com/cdn/shop/files/Two_River_Mushroom_Logo.png?height=64&v=1704324073">
+<link rel="icon" type="image/png" href="assets/logo.png">
 <link rel="stylesheet" href="assets/site.css">
+<link rel="stylesheet" href="assets/theme-river.css">
 </head>
 <body data-page="locations">
 <div id="site-header"></div>
@@ -17,19 +18,20 @@
 <main>
   <section class="pagehead">
     <div class="wrap inner">
-      <div class="eyebrow">Locations &amp; partners</div>
-      <h1>Where to find us</h1>
-      <p>Pick up at the farm, or look for Two River on menus and shelves at 40+ spots across New Jersey.</p>
+      <div class="eyebrow">Where to buy</div>
+      <h1>Find us across New Jersey</h1>
+      <p>Pick up at the farm, or look for Two River on menus and shelves at 40+ spots across the Garden State.</p>
     </div>
   </section>
 
+  <!-- FARM VISIT -->
   <section class="wrap split" style="padding:56px 28px 24px;gap:24px;align-items:stretch">
     <div class="map-box">
       <iframe title="Mighty Dare Farm map" loading="lazy" allowfullscreen
         src="https://www.google.com/maps?q=145+Stillhouse+Road+Millstone+NJ+08510&output=embed"></iframe>
     </div>
     <div class="info-card">
-      <div class="eyebrow" style="color:var(--terra);margin-bottom:12px;font-size:11px">Visit the farm</div>
+      <div class="eyebrow" style="margin-bottom:12px;font-size:11px">Visit the farm</div>
       <h2 style="font-size:30px;line-height:1.1;margin:0 0 14px">Mighty Dare Farm</h2>
       <p style="font-size:16px;line-height:1.8;color:var(--muted);margin:0 0 18px">145 Stillhouse Road<br>Millstone, NJ 08510<br>(732) 216-1859</p>
       <p style="font:600 14px var(--sans);color:var(--ink2);margin:0 0 24px">Monday – Saturday · 10AM–4PM<br><span style="color:var(--soft);font-weight:500">Sunday · Closed</span></p>
@@ -37,10 +39,35 @@
     </div>
   </section>
 
-  <section class="wrap" style="padding:32px 28px 80px">
-    <h2 style="font-size:30px;margin:0 0 6px;text-align:center">Retail &amp; restaurant partners</h2>
-    <p style="text-align:center;color:var(--soft);font-size:15px;margin:0 0 32px">Our mushrooms are served and sold across the Garden State.</p>
-    <div class="grid grid-2" id="partnerGrid"></div>
+  <!-- LOCATOR -->
+  <section class="wrap" style="padding:40px 28px 80px">
+    <div class="section-head">
+      <div>
+        <div class="eyebrow">The locator</div>
+        <h2>Restaurants, grocers &amp; markets</h2>
+      </div>
+      <div class="chips" id="locChips">
+        <button class="chip active" data-type="all" type="button">All</button>
+        <button class="chip" data-type="restaurant" type="button">Restaurants</button>
+        <button class="chip" data-type="grocer" type="button">Grocers</button>
+        <button class="chip" data-type="market" type="button">Farmers’ markets</button>
+      </div>
+    </div>
+    <div class="result-count" id="locCount"></div>
+    <div class="loc-grid" id="locGrid"></div>
+    <div class="loc-note">Sample entries for design review — the full 40+ partner list is being supplied by the farm</div>
+  </section>
+
+  <!-- MARKET SEASON -->
+  <section class="wrap" style="padding:0 28px 80px">
+    <div class="section-head">
+      <div>
+        <div class="eyebrow">Market season</div>
+        <h2>Find us at the markets</h2>
+      </div>
+    </div>
+    <div class="loc-grid" style="grid-template-columns:1fr 1fr" id="marketGrid"></div>
+    <div class="loc-note">Season schedule from the current site — 2026 dates being confirmed</div>
   </section>
 </main>
 
@@ -49,12 +76,26 @@
 <script src="assets/data.js"></script>
 <script>
   window.TRMpageInit = function(){
-    document.getElementById('partnerGrid').innerHTML = TRM.PARTNERS.map(c =>
-      `<div class="partner-card">
-        <div><div style="font-family:var(--serif);font-size:22px;margin-bottom:4px">${c.label}</div>
-        <div style="font-size:14px;color:var(--soft)">${c.desc}</div></div>
-        <div style="font-family:var(--serif);font-size:34px;color:var(--terra);flex:none">${c.count}</div>
-      </div>`).join('');
+    var TYPES = { farm:'Farm pick-up', restaurant:'Restaurant', grocer:'Grocer', market:'Farmers’ market' };
+    var active = 'all';
+    function render(){
+      var rows = TRM.LOCATIONS.filter(function(l){ return active === 'all' || l.type === active; });
+      document.getElementById('locGrid').innerHTML = rows.map(function(l){
+        return '<div class="loc-card"><div class="loc-type">' + TYPES[l.type] + '</div><b>' + l.name + '</b><div class="town">' + l.town + ', NJ</div></div>';
+      }).join('');
+      document.getElementById('locCount').textContent = rows.length + ' locations';
+    }
+    document.querySelectorAll('#locChips .chip').forEach(function(c){
+      c.onclick = function(){
+        active = c.dataset.type;
+        document.querySelectorAll('#locChips .chip').forEach(function(x){ x.classList.toggle('active', x === c); });
+        render();
+      };
+    });
+    render();
+    document.getElementById('marketGrid').innerHTML = TRM.MARKETS.map(function(m){
+      return '<div class="loc-card"><div class="loc-type">' + m.when + '</div><b>' + m.name + '</b><div class="town">' + m.where + ' · ' + m.time + '</div></div>';
+    }).join('');
   };
 </script>
 <script src="assets/site.js"></script>
