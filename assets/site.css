@@ -43,7 +43,8 @@ button{font-family:var(--sans)}
 .header-row{height:84px;display:flex;align-items:center;justify-content:space-between;gap:24px;transition:height .38s cubic-bezier(.4,0,.2,1)}
 .brand{display:flex;align-items:center;gap:11px;flex:none;align-self:center;position:relative;z-index:70}
 /* overhanging medallion (desktop): dips below the bar, with a clear gap from the announcement bar above */
-.brand .brand-logo{height:96px;width:auto;transform:translateY(16px);transform-origin:center bottom;transition:height .38s cubic-bezier(.4,0,.2,1),transform .38s cubic-bezier(.4,0,.2,1)}
+/* cream ring frames the badge so the overhanging part reads as cut out of the header over the hero */
+.brand .brand-logo{height:96px;width:auto;border-radius:50%;box-shadow:0 0 0 7px var(--bg);transform:translateY(16px);transform-origin:center bottom;transition:height .38s cubic-bezier(.4,0,.2,1),transform .38s cubic-bezier(.4,0,.2,1)}
 .brand-wordmark{display:none;height:40px;width:auto}
 
 /* compact / scrolled state — identical colors, only the bar + medallion resize */
