@@ -2,6 +2,7 @@
 (function () {
   const LOGO = TRM.IMG.logo;
   const LOGO_BADGE = TRM.IMG.logoBadge || TRM.IMG.logo;
+  const LOGO_TEXT = TRM.IMG.logoText || TRM.IMG.logo;
   const CART_KEY = 'trm_cart_v1';
 
   /* ---------- cart store ---------- */
@@ -89,8 +90,7 @@
           </a>
         </div>
       </div>
-    </div>
-    <a class="nav-link" href="contact.html">Contact</a>`;
+    </div>`;
 
   const HEADER = `
     <div class="announce">
@@ -101,14 +101,15 @@
       <div class="wrap header-row">
         <a class="brand" href="index.html" aria-label="Two River Gourmet Mushroom home">
           <img class="brand-logo" src="${LOGO}" alt="Two River Gourmet Mushroom logo">
+          <img class="brand-wordmark" src="${LOGO_TEXT}" alt="Two River Mushroom">
         </a>
         <nav class="nav">${NAV}</nav>
         <div class="header-actions">
           <a class="icon-btn" href="shop.html" aria-label="Shop">
             <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#2a231b" stroke-width="1.7"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4-4"/></svg></a>
           <button class="icon-btn" id="cartBtn" aria-label="Open cart">
-            <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="#2a231b" stroke-width="1.7"><path d="M6 7h12l-1.2 11.2a2 2 0 0 1-2 1.8H9.2a2 2 0 0 1-2-1.8z"/><path d="M9 7a3 3 0 0 1 6 0"/></svg>
-            <span class="cart-count" id="cartCount">0</span>
+            <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="#2a231b" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><path d="M3 6h18"/><path d="M16 10a4 4 0 0 1-8 0"/></svg>
+            <span class="cart-count" id="cartCount" hidden></span>
           </button>
           <button class="icon-btn menu-toggle" id="menuToggle" aria-label="Open menu">
             <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#2a231b" stroke-width="2"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
@@ -190,7 +191,7 @@
   function closeCart(){ const r=document.getElementById('cartRoot'); r.dataset.open=''; r.innerHTML=''; }
   window.TRMopenCart = openCart;
 
-  function updateCount(){ const el=document.getElementById('cartCount'); if(el) el.textContent = cartCount(); }
+  function updateCount(){ const el=document.getElementById('cartCount'); if(!el) return; const n=cartCount(); el.textContent = n; el.hidden = n < 1; }
 
   function renderCart(){
     const root = document.getElementById('cartRoot');
@@ -278,6 +279,21 @@
     });
   }
 
+  /* intelligent sticky: shrink the bar + tuck the medallion once the page scrolls */
+  function setupStickyHeader(host){
+    const header = (host || document).querySelector('.site-header');
+    if(!header) return;
+    let ticking = false;
+    const apply = ()=> header.classList.toggle('scrolled', window.scrollY > 24);
+    const onScroll = ()=>{
+      if(ticking) return;
+      ticking = true;
+      requestAnimationFrame(()=>{ apply(); ticking = false; });
+    };
+    apply();
+    window.addEventListener('scroll', onScroll, {passive:true});
+  }
+
   function boot(){
     const h = document.getElementById('site-header');
     const f = document.getElementById('site-footer');
@@ -285,6 +301,7 @@
     if(f) f.innerHTML = FOOTER + CART;
     updateCount();
     setActiveNav();
+    setupStickyHeader(h);
     const cb = document.getElementById('cartBtn'); if(cb) cb.onclick = openCart;
     const mt = document.getElementById('menuToggle'), mm = document.getElementById('mobileMenu'), mc = document.getElementById('menuClose');
     if(mt && mm) mt.onclick = ()=> mm.classList.add('open');

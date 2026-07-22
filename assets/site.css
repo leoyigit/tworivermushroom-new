@@ -37,13 +37,22 @@ button{font-family:var(--sans)}
 .announce a{color:var(--peach);text-decoration:underline;text-underline-offset:3px}
 
 /* header */
-.site-header{position:sticky;top:0;z-index:50;background:rgba(240,233,219,.92);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
-.header-row{height:96px;display:flex;align-items:center;justify-content:space-between;gap:24px}
-.brand{display:flex;align-items:center;gap:11px;flex:none}
-.brand-logo{height:84px;width:auto}
+/* wrapper must not box the sticky child, or it un-sticks after ~one bar height */
+#site-header{display:contents}
+.site-header{position:sticky;top:0;z-index:50;background:rgba(240,233,219,.92);backdrop-filter:blur(10px);border-bottom:1px solid var(--line);overflow:visible}
+.header-row{height:84px;display:flex;align-items:center;justify-content:space-between;gap:24px;transition:height .38s cubic-bezier(.4,0,.2,1)}
+.brand{display:flex;align-items:center;gap:11px;flex:none;align-self:center;position:relative;z-index:70}
+/* overhanging medallion (desktop): dips below the bar, with a clear gap from the announcement bar above */
+.brand .brand-logo{height:96px;width:auto;transform:translateY(16px);transform-origin:center bottom;transition:height .38s cubic-bezier(.4,0,.2,1),transform .38s cubic-bezier(.4,0,.2,1)}
+.brand-wordmark{display:none;height:40px;width:auto}
+
+/* compact / scrolled state — identical colors, only the bar + medallion resize */
+.site-header.scrolled .header-row{height:60px}
+.site-header.scrolled .brand .brand-logo{height:46px;transform:translateY(0)}
+@media(prefers-reduced-motion:reduce){.header-row,.brand .brand-logo{transition:none}}
 .nav{display:flex;align-items:stretch;gap:26px;flex:none;height:100%}
 .nav-item{position:static;display:flex;align-items:center}
-.nav-link{cursor:pointer;display:flex;align-items:center;gap:5px;font:600 14px var(--sans);color:var(--ink);transition:.15s}
+.nav-link{cursor:pointer;display:flex;align-items:center;gap:5px;font:600 14px var(--sans);color:var(--ink);text-transform:uppercase;letter-spacing:.05em;transition:.15s}
 .nav-link:hover,.nav-link.active{color:var(--terra)}
 .nav-link svg{transition:transform .2s}
 .nav-item:hover .nav-link svg{transform:rotate(180deg)}
@@ -282,8 +291,11 @@ button{font-family:var(--sans)}
 @media(max-width:900px){
   .nav{display:none}
   .menu-toggle{display:flex}
-  .header-row{height:76px}
-  .brand-logo{height:62px}
+  /* mobile: plain contained wordmark — no overhang, no shrink animation */
+  .header-row{height:64px}
+  .brand .brand-logo{display:none}
+  .brand-wordmark{display:block;transform:none}
+  .site-header.scrolled .header-row{height:64px}
   .hero h1{font-size:60px}
   .pagehead h1{font-size:40px}
   .grid-3,.grid-4{grid-template-columns:repeat(2,1fr)}
