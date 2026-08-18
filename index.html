@@ -9,24 +9,24 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,400;0,500;0,600;1,400&family=Hanken+Grotesk:wght@400;500;600;700&family=Spline+Sans+Mono:wght@500;600&display=swap" rel="stylesheet">
 <link rel="icon" type="image/png" href="https://www.tworivermushroom.com/cdn/shop/files/Two_River_Mushroom_Logo.png?height=64&v=1704324073">
-<link rel="stylesheet" href="assets/site.css">
-<link rel="stylesheet" href="assets/theme-river.css">
+<link rel="stylesheet" href="assets/site.css?v=2">
+<link rel="stylesheet" href="assets/theme-river.css?v=2">
 </head>
 <body data-page="home">
 <div id="site-header"></div>
 
 <main>
   <!-- HERO -->
-  <section class="hero">
-    <img class="hero-img" src="https://www.tworivermushroom.com/cdn/shop/files/organic_mushrooms.jpg?width=1600&v=1719253562" alt="A harvest of fresh organic gourmet mushrooms">
+  <section class="hero hero-light">
+    <img class="hero-img" src="assets/hero-broth.png" alt="Two River Mushroom Broth — Lion’s Mane, Chaga, and Maitake cartons with fresh gourmet mushrooms">
     <div class="hero-shade"></div>
     <div class="wrap hero-inner">
-      <div class="eyebrow">Mighty Dare Farm · Millstone, NJ</div>
-      <h1>For those who desire only the finest.</h1>
+      <div class="eyebrow">Two River Gourmet Mushroom · Millstone, NJ</div>
+      <h1>Award-Winning Organic Mushroom Broth</h1>
       <div class="hero-actions">
         <a class="btn btn-peach" href="broth.html">Shop Mushroom Broth</a>
-        <a class="btn btn-ghost-light" href="shop.html">Fresh Mushrooms · Farm Pick-Up</a>
-        <span>Award-winning broth, shipped free nationwide. Fresh gourmet mushrooms, picked to order at the farm.</span>
+        <a class="btn btn-ghost" href="shop.html">Fresh Mushrooms · Farm Pick-Up</a>
+        <span>Functional mushrooms, finally where they belong — real Lion’s Mane, Chaga &amp; Maitake, brewed slow. Sip it, cook with it, subscribe and save.</span>
       </div>
       <div class="hero-links">
         <a href="locations.html">In 40+ NJ restaurants &amp; stores — where to buy
@@ -79,30 +79,13 @@
     </div>
   </section>
 
-  <!-- FRESH — LOCAL PICK-UP -->
-  <section class="wrap section" style="padding-bottom:16px">
-    <div class="section-head">
-      <div>
-        <div class="eyebrow">Fresh from the farm</div>
-        <h2>Find your flavor</h2>
-        <div class="pickup-flag">
-          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 21s-7-5.5-7-11a7 7 0 0 1 14 0c0 5.5-7 11-7 11z"/><circle cx="12" cy="10" r="2.5"/></svg>
-          Local farm pick-up only — we never ship perishables
-        </div>
-      </div>
-      <a class="link-arrow" href="shop.html">Shop all
-        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
-    </div>
-    <div class="grid grid-3" id="featuredGrid"></div>
-  </section>
-
   <!-- FOUNDER -->
   <section class="wrap" style="margin-top:64px">
     <div class="quote-band">
       <div class="eyebrow">The founder’s promise · Est. 2014</div>
       <blockquote>“For those who desire only the finest gourmet mushrooms.”</blockquote>
       <div class="attr">KC Sullivan · Founder</div>
-      <p>KC founded Two River on 25 preserved acres of Mighty Dare Farm in Millstone — New Jersey’s first USDA Organic mushroom farm, and still small-scale by choice.</p>
+      <p>KC founded Two River Mushroom in 2014, New Jersey’s first USDA Organic mushroom farm, and still small-scale by choice.</p>
       <a class="link-arrow" href="about.html">Read our story
         <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
     </div>
@@ -184,8 +167,6 @@
 <script src="assets/data.js"></script>
 <script>
   window.TRMpageInit = function(){
-    document.getElementById('featuredGrid').innerHTML =
-      TRM.PRODUCTS.slice(0,6).map(TRMcard).join('');
     document.getElementById('reviewGrid').innerHTML = TRM.REVIEWS.map(r =>
       `<div class="review"><div class="stars">★★★★★</div><p>“${r.text}”</p><div class="review-name">— ${r.name}</div></div>`).join('');
     document.getElementById('pressRow').innerHTML = TRM.MEDIA.map(m =>
