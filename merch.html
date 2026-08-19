@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Merchandise &amp; CSA · Two River Gourmet Mushroom</title>
-<meta name="description" content="Two River merchandise and CSA shares. Wear the farm and join our seasonal mushroom membership.">
+<title>Merchandise · Two River Gourmet Mushroom</title>
+<meta name="description" content="Two River merchandise. Wear the farm.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,400;0,500;0,600;1,400&family=Hanken+Grotesk:wght@400;500;600;700&family=Spline+Sans+Mono:wght@500;600&display=swap" rel="stylesheet">
@@ -18,20 +18,15 @@
 <main>
   <section class="pagehead">
     <div class="wrap inner">
-      <div class="eyebrow">Wear the farm · join the harvest</div>
-      <h1>Merchandise &amp; CSA</h1>
-      <p>Soft tees for fungi fanatics, and a seasonal CSA share for the truly mushroom-obsessed.</p>
+      <div class="eyebrow">Wear the farm</div>
+      <h1>Merchandise</h1>
+      <p>Soft tees for fungi fanatics — pick up with your mushrooms at the farm.</p>
     </div>
   </section>
 
-  <section class="wrap" style="padding:48px 28px 24px">
+  <section class="wrap" style="padding:48px 28px 80px">
     <div class="section-head"><div><div class="eyebrow" style="color:var(--terra)">Apparel &amp; goods</div><h2>Merch</h2></div></div>
     <div class="grid grid-3" id="merchGrid"></div>
-  </section>
-
-  <section class="wrap" style="padding:24px 28px 80px">
-    <div class="section-head"><div><div class="eyebrow" style="color:var(--terra)">Seasonal membership</div><h2>Mushroom CSA</h2></div></div>
-    <div class="grid grid-3" id="csaGrid"></div>
   </section>
 </main>
 
@@ -41,9 +36,7 @@
 <script>
   window.TRMpageInit = function(){
     const merch = TRM.OTHER.filter(p => p.type === 'merch');
-    const csa   = TRM.OTHER.filter(p => p.type === 'csa');
     document.getElementById('merchGrid').innerHTML = merch.map(TRMcard).join('');
-    document.getElementById('csaGrid').innerHTML = csa.map(TRMcard).join('');
   };
 </script>
 <script src="assets/site.js"></script>

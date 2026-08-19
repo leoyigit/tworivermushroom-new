@@ -102,14 +102,8 @@ const TRM = {
       flavor:['Two boxes of each flavor','Lion’s Mane · Chaga · Maitake','Clean, organic ingredients','Free shipping or farm pickup'] }
   ],
 
-  // ---- CSA + merch ----
+  // ---- merch ----
   OTHER: [
-    { id:'2025-clinton-hill-csa', name:'Clinton Hill CSA Share', price:176, cat:'CSA', type:'csa',
-      note:'11 deliveries · Forest Medley',
-      img:[img('0-7.jpg?v=1712856136',1100)],
-      blurb:'11 deliveries, every other Thursday from June through October — a 1 lb Forest Medley mix of oyster, shiitake, lion’s mane, king and chestnut mushrooms, delivered to Clinton Hill.',
-      flavor:['11 bi-weekly deliveries','1 lb Forest Medley each','June – October','Brooklyn pickup'] },
-
     { id:'two-river-long-sleeve', name:'Two River Long Sleeve', price:25, cat:'Merch', type:'merch', soldOut:true,
       note:'Soft organic-cotton tee',
       img:[img('two_river_mushroom_long_sleeve_t_shirt_grey.png?v=1719253362',1000), img('green_two_river_mushroom_long_sleeve_t_shirt.png?v=1719253293',1000)],
@@ -158,9 +152,18 @@ const TRM = {
   ],
 
   TEAM: [
-    { initials:'KS', role:'Founder', name:'KC Sullivan' },
-    { initials:'KC', role:'Co-Owner', name:'Kurt Cavano' },
-    { initials:'SS', role:'Co-Owner', name:'Scott Szegeski' }
+    { id:'kc', initials:'KS', role:'Founder', name:'KC Sullivan',
+      img:'https://www.tworivermushroom.com/cdn/shop/files/3556798023.jpg?v=1711633023&width=900',
+      pos:'50% 50%',
+      bio:'KC started Two River with a simple belief — that New Jersey deserved its own organic, gourmet mushrooms. What began as a few fruiting blocks is now the state’s first organic mushroom farm, supplying dozens of restaurants and markets.' },
+    { id:'kurt', initials:'KC', role:'Co-Owner', name:'Kurt Cavano',
+      img:'https://www.tworivermushroom.com/cdn/shop/files/IMG_3836.jpg?v=1716423390&width=900',
+      pos:'45% 30%',
+      bio:'Kurt is a co-owner of Two River Gourmet Mushroom, helping grow the farm’s reach across New Jersey restaurants, markets, and home kitchens.' },
+    { id:'scott', initials:'SS', role:'Co-Owner', name:'Scott Szegeski',
+      img:'https://www.tworivermushroom.com/cdn/shop/files/scott_szegeski.webp?v=1716423361&width=900',
+      pos:'50% 50%',
+      bio:'Scott is a co-owner of Two River Gourmet Mushroom, working alongside KC and Kurt to keep the farm small-scale, organic, and close to the community it feeds.' }
   ],
 
   // farmers' markets from the farm's Google Map
@@ -175,17 +178,6 @@ const TRM = {
     { name:'HoneyBrook Organic Farm', when:'On-farm market', time:'Seasonal', where:'Pennington, NJ' },
     { name:'Ironbound Farmers Market', when:'Seasonal', time:'Check market hours', where:'Newark, NJ' },
     { name:'West Windsor Community Farmers’ Market', when:'Seasonal', time:'Check market hours', where:'West Windsor, NJ' }
-  ],
-
-  // CSA pick-up stops (consolidated from the live site's per-neighborhood pages)
-  CSA_STOPS: [
-    { name:'Stanton Street CSA', area:'Lower East Side, Manhattan' },
-    { name:'Clinton Hill CSA', area:'Brooklyn' },
-    { name:'Prospect Park CSA', area:'Brooklyn' },
-    { name:'Central Brooklyn CSA', area:'Brooklyn' },
-    { name:'Dutch Kills CSA', area:'Long Island City, Queens' },
-    { name:'Hellgate CSA', area:'Astoria, Queens' },
-    { name:'Google CSA', area:'Workplace program, NYC' }
   ],
 
   // partner locator from https://www.google.com/maps/d/viewer?mid=1xxR2HcEiPs_C84lLQk1EjnsqJNw0P7yk

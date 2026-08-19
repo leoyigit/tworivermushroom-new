@@ -29,7 +29,6 @@
             <h6>Shop</h6>
             <a class="mega-link" href="shop.html"><b>Organic Mushrooms</b><span>Fresh from the farm — local pick-up only</span></a>
             <a class="mega-link" href="broth.html"><b>Mushroom Broth</b><span>Award-winning · ships free nationwide</span></a>
-            <a class="mega-link" href="csa.html"><b>Mushroom CSA</b><span>A season of shares, delivered to NYC stops</span></a>
             <a class="mega-link" href="merch.html"><b>Merchandise</b><span>Wear the farm</span></a>
           </div>
           <div class="mega-col">
@@ -124,7 +123,7 @@
       </div>
       <a href="index.html">Home</a>
       <div class="mgroup-label">Shop</div>
-      <div class="sub"><a href="shop.html">Organic Mushrooms</a><a href="broth.html">Mushroom Broth</a><a href="csa.html">Mushroom CSA</a><a href="merch.html">Merchandise</a></div>
+      <div class="sub"><a href="shop.html">Organic Mushrooms</a><a href="broth.html">Mushroom Broth</a><a href="merch.html">Merchandise</a></div>
       <a href="subscribe.html">Subscribe</a>
       <div class="mgroup-label">Learn</div>
       <div class="sub"><a href="grow.html">How We Grow</a><a href="facts.html">Fun Facts</a><a href="recipes.html">Recipes</a><a href="faq.html">FAQ</a><a href="news.html">Farm News</a><a href="media.html">Press &amp; Awards</a></div>
@@ -156,7 +155,6 @@
           <a href="shop.html">Organic Mushrooms</a>
           <a href="broth.html">Mushroom Broth</a>
           <a href="subscribe.html">Subscribe &amp; Save</a>
-          <a href="csa.html">Mushroom CSA</a>
           <a href="merch.html">Merchandise</a>
           <a href="returns.html">Returns &amp; Refunds</a>
         </div>
@@ -268,7 +266,7 @@
   /* ---------- boot ---------- */
   function setActiveNav(){
     const page = document.body.dataset.page;
-    const map = { shop:'shop.html', broth:'broth.html', merch:'merch.html', subscribe:'subscribe.html', csa:'csa.html',
+    const map = { shop:'shop.html', broth:'broth.html', merch:'merch.html', subscribe:'subscribe.html',
       grow:'grow.html', facts:'facts.html', recipes:'recipes.html', media:'media.html', faq:'faq.html', news:'news.html',
       about:'about.html', team:'team.html', derek:'derek.html', locations:'locations.html',
       contact:'contact.html' };

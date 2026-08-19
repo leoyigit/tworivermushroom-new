@@ -142,7 +142,7 @@
 <script>
   window.TRMpageInit = function(){
     document.getElementById('teamRow').innerHTML = TRM.TEAM.map(function(t){
-      return '<div class="tmate"><div class="init">' + t.initials + '</div><b>' + t.name + '</b><span>' + t.role + '</span></div>';
+      return '<a class="tmate" href="team.html#' + t.id + '"><img src="' + t.img + '" alt="' + t.name + '" style="object-position:' + (t.pos || '50% 50%') + '"><b>' + t.name + '</b><span>' + t.role + '</span></a>';
     }).join('');
   };
 </script>
