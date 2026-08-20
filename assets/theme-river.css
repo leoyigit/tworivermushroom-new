@@ -64,13 +64,18 @@
 
 .hero-light{background:var(--bg)}
 .hero-light .hero-shade{background:
-  linear-gradient(90deg,var(--bg) 0%,rgba(246,243,236,.95) 26%,rgba(246,243,236,.78) 42%,rgba(246,243,236,.4) 58%,rgba(246,243,236,0) 74%),
-  linear-gradient(180deg,rgba(246,243,236,0) 42%,rgba(246,243,236,.82) 100%)}
+  linear-gradient(90deg,var(--bg) 0%,rgba(246,243,236,.92) 22%,rgba(246,243,236,.7) 38%,rgba(246,243,236,.28) 52%,rgba(246,243,236,0) 62%),
+  linear-gradient(180deg,rgba(246,243,236,0) 55%,rgba(246,243,236,.7) 100%)}
 .hero-light h1{color:var(--ink)}
 .hero-light .eyebrow{color:var(--terra)}
 .hero-light .hero-actions span{color:var(--ink2)}
 .hero-light .hero-links a{color:var(--terra)}
 .hero-light .hero-links a:hover{color:var(--terra-d)}
+
+@media(max-width:900px){
+  .hero-light .hero-shade{background:
+    linear-gradient(180deg,rgba(246,243,236,0) 22%,rgba(246,243,236,.4) 52%,rgba(246,243,236,.92) 78%)}
+}
 
 /* section accents — moss eyebrows (organic cue), teal links */
 .section-head .eyebrow{color:var(--sage)}
@@ -95,10 +100,12 @@
 .band{background:var(--bark)}
 .band-text h2{color:#faf8f3}
 .band-text p{color:rgba(250,248,243,.92)}
-.band-img{background:var(--bark-d)}
+.band-img,.band-img-labels{background:var(--bark)}
 .pill{background:var(--gold);color:#fbf3e4}
 .band .btn-peach{background:#faf8f3;color:var(--ink)}
 .band .btn-peach:hover{background:var(--ink);color:#faf8f3}
+.band .btn-ghost-light{border-color:rgba(250,248,243,.7);color:#faf8f3}
+.band .btn-ghost-light:hover{background:#faf8f3;color:var(--ink);border-color:#faf8f3}
 
 /* founder quote band — Ink block, light-teal accents */
 .quote-band{background:var(--ink)}

@@ -20,15 +20,19 @@
   /* ---------- chrome markup ---------- */
   const CARET = `<svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M6 9l6 6 6-6"/></svg>`;
 
+  const isHome = document.body.dataset.page === 'home';
+  const brothShopHref = isHome ? '#subscribe' : 'index.html#subscribe';
+  const shopHref = isHome ? '#subscribe' : 'broth.html';
+
   const NAV = `
     <div class="nav-item">
-      <a class="nav-link" href="shop.html">Shop ${CARET}</a>
+      <a class="nav-link" href="${shopHref}">Shop ${CARET}</a>
       <div class="mega">
         <div class="mega-inner">
           <div class="mega-col">
             <h6>Shop</h6>
-            <a class="mega-link" href="shop.html"><b>Organic Mushrooms</b><span>Fresh from the farm — local pick-up only</span></a>
             <a class="mega-link" href="broth.html"><b>Mushroom Broth</b><span>Award-winning · ships free nationwide</span></a>
+            <a class="mega-link" href="shop.html"><b>Organic Mushrooms</b><span>Fresh from the farm — local pick-up only</span></a>
             <a class="mega-link" href="merch.html"><b>Merchandise</b><span>Wear the farm</span></a>
           </div>
           <div class="mega-col">
@@ -93,8 +97,8 @@
 
   const HEADER = `
     <div class="announce">
-      <span>Certified USDA Organic · Local Farm Pick-Up · Millstone, NJ</span>
-      <a href="shop.html">Shop now →</a>
+      <span>Award-winning broth · Ships free · Farm pick-up in Millstone, NJ</span>
+      <a href="${brothShopHref}">Shop broth →</a>
     </div>
     <header class="site-header">
       <div class="wrap header-row">
@@ -104,7 +108,7 @@
         </a>
         <nav class="nav">${NAV}</nav>
         <div class="header-actions">
-          <a class="icon-btn" href="shop.html" aria-label="Shop">
+          <a class="icon-btn" href="${shopHref}" aria-label="Shop broth">
             <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#2a231b" stroke-width="1.7"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4-4"/></svg></a>
           <button class="icon-btn" id="cartBtn" aria-label="Open cart">
             <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="#2a231b" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><path d="M3 6h18"/><path d="M16 10a4 4 0 0 1-8 0"/></svg>
@@ -123,7 +127,7 @@
       </div>
       <a href="index.html">Home</a>
       <div class="mgroup-label">Shop</div>
-      <div class="sub"><a href="shop.html">Organic Mushrooms</a><a href="broth.html">Mushroom Broth</a><a href="merch.html">Merchandise</a></div>
+      <div class="sub"><a href="${brothShopHref}">Shop Broth</a><a href="shop.html">Organic Mushrooms</a><a href="broth.html">Mushroom Broth</a><a href="merch.html">Merchandise</a></div>
       <a href="subscribe.html">Subscribe</a>
       <div class="mgroup-label">Learn</div>
       <div class="sub"><a href="grow.html">How We Grow</a><a href="facts.html">Fun Facts</a><a href="recipes.html">Recipes</a><a href="faq.html">FAQ</a><a href="news.html">Farm News</a><a href="media.html">Press &amp; Awards</a></div>
@@ -152,9 +156,9 @@
         </div>
         <div class="foot-col">
           <h5>Shop</h5>
-          <a href="shop.html">Organic Mushrooms</a>
           <a href="broth.html">Mushroom Broth</a>
           <a href="subscribe.html">Subscribe &amp; Save</a>
+          <a href="shop.html">Organic Mushrooms</a>
           <a href="merch.html">Merchandise</a>
           <a href="returns.html">Returns &amp; Refunds</a>
         </div>
@@ -199,8 +203,10 @@
     if(ids.length === 0){
       lines = `<div class="cart-empty">
         <div style="font-family:var(--serif);font-size:19px;color:var(--muted);margin-bottom:10px">Your basket is empty</div>
-        <p style="font-size:14px;margin:0 0 22px">Fresh mushrooms are waiting at the farm.</p>
-        <a class="btn btn-terra" href="shop.html">Shop mushrooms</a></div>`;
+        <p style="font-size:14px;margin:0 0 22px">Award-winning broth ships free nationwide.</p>
+        <a class="btn btn-terra" href="${brothShopHref}">Shop broth</a>
+        <a class="link-arrow" href="shop.html" style="margin-top:16px">or shop fresh mushrooms
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></div>`;
     } else {
       lines = ids.map(id => {
         const p = TRM.find(id); if(!p) return '';
@@ -275,6 +281,10 @@
     document.querySelectorAll('.site-header .nav-link').forEach(a=>{
       if(a.getAttribute('href')===href) a.classList.add('active');
     });
+    if(['shop','broth','merch'].includes(page)){
+      const shopLink = document.querySelector('.site-header .nav-item .nav-link');
+      if(shopLink) shopLink.classList.add('active');
+    }
   }
 
   /* intelligent sticky: shrink the bar + tuck the medallion once the page scrolls */

@@ -9,29 +9,51 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,400;0,500;0,600;1,400&family=Hanken+Grotesk:wght@400;500;600;700&family=Spline+Sans+Mono:wght@500;600&display=swap" rel="stylesheet">
 <link rel="icon" type="image/png" href="https://www.tworivermushroom.com/cdn/shop/files/Two_River_Mushroom_Logo.png?height=64&v=1704324073">
-<link rel="stylesheet" href="assets/site.css?v=3">
-<link rel="stylesheet" href="assets/theme-river.css?v=3">
+<link rel="stylesheet" href="assets/site.css?v=10">
+<link rel="stylesheet" href="assets/theme-river.css?v=10">
 </head>
 <body data-page="home">
 <div id="site-header"></div>
 
 <main>
-  <!-- HERO -->
+  <!--
+    HOMEPAGE FLOW (Shopline): broth-led, mushrooms secondary
+    1. Hero → 2. Broth story / primary CTA → 3. Broth products
+    → 4. Brand / story → 5. Mushroom products (secondary) → 6. Supporting → Footer
+  -->
+  <!--
+    HERO VIDEO — Shopline conversion option (client-approved if final asset is video)
+
+    If the approved hero asset is a video instead of the still:
+    - Use video as the Hero background/media (same crop/overlay as the still).
+    - Autoplay where technically appropriate; mute by default so autoplay is allowed.
+    - Loop smoothly; no controls, no sound unless the shopper unmutes (default stays muted).
+    - Fallback: keep the still (assets/hero-broth-lineup.jpg) as poster / first-frame image
+      when video cannot load, autoplay is blocked, or reduced-motion is preferred.
+    - Desktop + mobile: serve an appropriately sized file (or a mobile-safe still) so the
+      Hero does not feel overloaded or jump while the video loads.
+    - Mobile: prefer a still (or a short muted loop with playsinline). Do not autoplay a
+      heavy file on small screens / Save-Data; poster stays visible until playback starts.
+    - Honor prefers-reduced-motion: show the fallback image, do not autoplay.
+    - Do not let loading delay hide the headline/CTAs — overlay copy stays independent of media.
+    - Keep muted + playsinline + loop; never rely on sound for the story.
+  -->
+  <!-- 1. HERO — broth-led, primary shopping CTA only -->
   <section class="hero hero-light">
-    <img class="hero-img" src="assets/hero-broth.png" alt="Two River Mushroom Broth — Lion’s Mane, Chaga, and Maitake cartons with fresh gourmet mushrooms">
+    <div class="hero-media">
+      <img class="hero-img" src="assets/hero-broth-lineup.jpg" width="4320" height="2029" fetchpriority="high" decoding="async" alt="Two River Mushroom Broth — Lion’s Mane, Chaga, and Maitake cartons with the mushrooms they’re made from">
+    </div>
     <div class="hero-shade"></div>
     <div class="wrap hero-inner">
-      <div class="eyebrow">Two River Gourmet Mushroom · Millstone, NJ</div>
+      <div class="eyebrow">Stir it. Sip it. Soup it.</div>
       <h1>Award-Winning Organic Mushroom Broth</h1>
       <div class="hero-actions">
         <a class="btn btn-peach" href="#subscribe">Shop Mushroom Broth</a>
-        <a class="btn btn-ghost" href="shop.html">Fresh Mushrooms</a>
-        <span>Functional mushrooms, finally where they belong — real Lion’s Mane, Chaga &amp; Maitake, brewed slow. Sip it, cook with it, subscribe and save.</span>
       </div>
     </div>
   </section>
 
-  <!-- BENEFIT BAR — product trust, not farm locator -->
+  <!-- BENEFIT BAR — product trust, sits with the Hero (existing design) -->
   <section class="wrap">
     <div class="benefit-bar">
       <div class="benefit">
@@ -61,25 +83,28 @@
     </div>
   </section>
 
-  <!-- BROTH FLAGSHIP -->
-  <section class="wrap" style="margin-top:56px">
-    <div class="band">
+  <!-- 2. BROTH STORY / PRIMARY CTA -->
+  <section class="wrap home-flagship">
+    <div class="band band-flagship">
       <div class="band-text">
         <div class="pill">★ sofi™ Gold 2023 · NEXTY 2026</div>
         <h2>Two River<br>Mushroom Broth</h2>
-        <p>Organic Lion’s Mane, Shiitake, and 20 other clean, simple ingredients. Perfect for sipping, soups, and stock.</p>
-        <a class="btn btn-peach" href="#subscribe">Shop the broth</a>
-        <div class="band-note">Ships free nationwide · Subscribe &amp; save</div>
+        <p>Organic Lion’s Mane, Shiitake, and 20 other clean, simple ingredients. Sip it, cook with it, subscribe so you never run out.</p>
+        <div class="band-actions">
+          <a class="btn btn-peach" href="#subscribe">Shop the broth</a>
+          <a class="btn btn-ghost-light" href="#subscribe">Subscribe &amp; save</a>
+        </div>
+        <div class="band-note">Ships free nationwide · Skip, swap or cancel anytime</div>
       </div>
-      <div class="band-img"><img src="https://cdn.shopify.com/s/files/1/0634/0906/2084/files/tworiverbroth-8374_1.jpg?width=1200&v=1704327414" alt="Two River Mushroom Broth"></div>
+      <div class="band-img band-img-labels"><img src="assets/product-img2.png" alt="Two River Mushroom Broth — Lion’s Mane, Chaga, and Maitake" width="2400" height="1269" decoding="async"></div>
     </div>
   </section>
 
-  <!-- PURCHASE MODULE -->
-  <section id="subscribe" class="wrap" style="padding:56px 28px">
+  <!-- 3. BROTH PRODUCTS -->
+  <section id="subscribe" class="wrap home-buy">
     <div class="section-head">
       <div>
-        <div class="eyebrow">Free shipping, always</div>
+        <div class="eyebrow">The collection · free shipping</div>
         <h2>Choose your broth</h2>
       </div>
     </div>
@@ -120,8 +145,8 @@
     </div>
   </section>
 
-  <!-- THE DIFFERENCE — Brodo-style process, no location counts -->
-  <section class="wrap section">
+  <!-- 4. BRAND / STORY CONTENT -->
+  <section class="wrap section home-story">
     <div class="section-head">
       <div>
         <div class="eyebrow">The broth difference</div>
@@ -156,17 +181,34 @@
     </div>
   </section>
 
-  <!-- AWARDS & PRESS -->
-  <section class="wrap" style="margin-top:72px">
+  <!-- AWARDS & PRESS — brand proof, still above secondary shopping -->
+  <section class="wrap home-press">
     <div class="press-strip">
       <div class="eyebrow" style="color:var(--sage)">What people are saying</div>
       <div class="press-row" id="pressRow"></div>
     </div>
   </section>
 
+  <!-- 5. MUSHROOM PRODUCTS / SECONDARY SHOPPING — never in the Hero -->
+  <section id="fresh" class="home-secondary">
+    <div class="wrap section">
+      <div class="section-head">
+        <div>
+          <div class="eyebrow">Also from the farm</div>
+          <h2>Fresh gourmet mushrooms</h2>
+        </div>
+        <a class="link-arrow" href="shop.html">Shop all mushrooms
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+      </div>
+      <p class="fresh-note">Local farm pick-up in Millstone, NJ — we don’t ship fresh mushrooms. Broth ships free nationwide.</p>
+      <div class="grid grid-4" id="freshGrid"></div>
+    </div>
+  </section>
+
+  <!-- 6. SUPPORTING CONTENT -->
   <!-- RECIPES TEASER -->
   <section class="wrap section split">
-    <div class="media-rounded" style="aspect-ratio:3/2"><img src="https://www.tworivermushroom.com/cdn/shop/files/organic_mushroom_recipe.jpg?width=900&v=1719253586" alt="Mushroom recipe"></div>
+    <div class="media-rounded" style="aspect-ratio:3/2"><img src="https://www.tworivermushroom.com/cdn/shop/files/organic_mushroom_recipe.jpg?width=900&v=1719253586" alt="Mushroom recipe" loading="lazy" decoding="async" width="900" height="600"></div>
     <div>
       <div class="eyebrow">Cook with us</div>
       <h2>Recipes for breakfast, lunch &amp; dinner</h2>
@@ -184,7 +226,7 @@
   </section>
 
   <!-- EMAIL CAPTURE -->
-  <section class="wrap" style="padding:40px 28px 80px">
+  <section class="wrap home-email">
     <div class="subscribe" id="subscribeBox">
       <div class="eyebrow">Stay in the ritual</div>
       <h2>Recipes, new flavors &amp; farm notes</h2>
@@ -198,6 +240,7 @@
   </section>
 </main>
 
+<!-- 7. FOOTER -->
 <div id="site-footer"></div>
 
 <script src="assets/data.js"></script>
@@ -240,6 +283,7 @@
     document.getElementById('buyBtn').onclick = function(){ TRMcart.add(state.id, 1); };
     render();
 
+    document.getElementById('freshGrid').innerHTML = TRM.PRODUCTS.filter(function(p){ return !p.soldOut; }).slice(0,4).map(TRMcard).join('');
     document.getElementById('pressRow').innerHTML = TRM.MEDIA.map(m =>
       `<div class="press-item"><div class="outlet">${m.outlet} · ${m.date}</div><p>“${m.quote}”</p></div>`).join('');
     document.getElementById('subForm').addEventListener('submit', function(e){
