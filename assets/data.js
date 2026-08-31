@@ -166,22 +166,8 @@ const TRM = {
       bio:'Scott is a co-owner of Two River Gourmet Mushroom, working alongside KC and Kurt to keep the farm small-scale, organic, and close to the community it feeds.' }
   ],
 
-  // farmers' markets from the farm's Google Map
-  MARKETS: [
-    { name:'Alstede Farms', when:'On-farm market', time:'Seasonal', where:'Chester, NJ' },
-    { name:'Asbury Park Farmers Market', when:'Seasonal', time:'Check market hours', where:'Asbury Park, NJ' },
-    { name:'Blue Moon Acres', when:'On-farm market', time:'Seasonal', where:'Pennington, NJ' },
-    { name:'Brick Farmers’ Market', when:'Saturdays · May – late Sept', time:'8:30AM – 1:30PM', where:'Windward Beach Park, Brick NJ' },
-    { name:'Cook’s Market', when:'Seasonal', time:'Check market hours', where:'New Brunswick, NJ' },
-    { name:'Ethos Farm Project Organic Market', when:'On-farm market', time:'Seasonal', where:'Long Valley, NJ' },
-    { name:'Fernbrook Farms CSA', when:'CSA pick-up', time:'Seasonal', where:'Chesterfield, NJ' },
-    { name:'HoneyBrook Organic Farm', when:'On-farm market', time:'Seasonal', where:'Pennington, NJ' },
-    { name:'Ironbound Farmers Market', when:'Seasonal', time:'Check market hours', where:'Newark, NJ' },
-    { name:'West Windsor Community Farmers’ Market', when:'Seasonal', time:'Check market hours', where:'West Windsor, NJ' }
-  ],
-
   // partner locator from https://www.google.com/maps/d/viewer?mid=1xxR2HcEiPs_C84lLQk1EjnsqJNw0P7yk
-  // NJ restaurants, retail, ShopRite, Foodtown, and farmers' markets. Deduped. Out-of-state broth/Sprouts layers omitted.
+  // NJ restaurants and retail. Farmers’ markets omitted — seasonal hours were inconsistent.
   LOCATIONS: [
     { name:'Mighty Dare Farm — pick-up barn', town:'Millstone', type:'farm' },
 
@@ -295,24 +281,13 @@ const TRM = {
     { name:'The Food Emporium', town:'Marlboro', type:'grocer' },
     { name:'The Fresh Grocer of Fieldstone Plaza', town:'Oakland', type:'grocer' },
     { name:'Waterwitch', town:'Highlands', type:'grocer' },
-
-    { name:'Alstede Farms', town:'Chester', type:'market' },
-    { name:'Asbury Park Farmers Market', town:'Asbury Park', type:'market' },
-    { name:'Blue Moon Acres', town:'Pennington', type:'market' },
-    { name:'Brick Farmers’ Market', town:'Brick', type:'market' },
-    { name:'Cook’s Market', town:'New Brunswick', type:'market' },
-    { name:'Ethos Farm Project Organic Market', town:'Long Valley', type:'market' },
-    { name:'Fernbrook Farms CSA', town:'Chesterfield', type:'market' },
-    { name:'HoneyBrook Organic Farm', town:'Pennington', type:'market' },
-    { name:'Ironbound Farmers Market', town:'Newark', type:'market' },
-    { name:'West Windsor Community Farmers’ Market', town:'West Windsor', type:'market' }
+    { name:'Fernbrook Farms CSA', town:'Chesterfield', type:'grocer' }
   ],
 
   PARTNERS: [
     { label:'Farm-to-table restaurants', desc:'On menus across the Shore & beyond', count:'60+' },
-    { label:'Specialty grocers', desc:'Independent markets, ShopRite & Foodtown', count:'40+' },
-    { label:'Farm pick-up', desc:'Mighty Dare Farm · Millstone', count:'1' },
-    { label:"Farmers' markets", desc:'Weekend stalls & on-farm stands', count:'10' }
+    { label:'Specialty grocers', desc:'Independent grocers, ShopRite & Foodtown', count:'40+' },
+    { label:'Farm pick-up', desc:'Mighty Dare Farm · Millstone', count:'1' }
   ],
 
   POLICIES: [

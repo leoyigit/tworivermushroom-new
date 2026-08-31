@@ -39,7 +39,7 @@
             <h6>Programs</h6>
             <a class="mega-link" href="subscribe.html"><b>Subscribe &amp; Save</b><span>10% off every delivery, free shipping always</span></a>
             <a class="mega-link" href="broth.html#subscribe"><b>The Starter Box</b><span>All three flavors — find your favorite</span></a>
-            <a class="mega-link" href="locations.html"><b>Where to Buy</b><span>40+ restaurants, grocers &amp; markets</span></a>
+            <a class="mega-link" href="locations.html"><b>Where to Buy</b><span>40+ restaurants, grocers &amp; the farm</span></a>
           </div>
           <a class="mega-feature" href="broth.html">
             <img src="${TRM.IMG.broth}" alt="Two River Mushroom Broth" loading="lazy">
@@ -84,7 +84,7 @@
           </div>
           <div class="mega-col">
             <h6>Visit</h6>
-            <a class="mega-link" href="locations.html"><b>Where to Buy</b><span>Locator, markets &amp; the pick-up barn</span></a>
+            <a class="mega-link" href="locations.html"><b>Where to Buy</b><span>Locator, grocers &amp; the pick-up barn</span></a>
             <a class="mega-link" href="contact.html"><b>Contact</b><span>Mon–Sat · 10AM–4PM · Millstone, NJ</span></a>
           </div>
           <a class="mega-feature" href="about.html">

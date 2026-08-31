@@ -44,30 +44,17 @@
     <div class="section-head">
       <div>
         <div class="eyebrow">The locator</div>
-        <h2>Restaurants, grocers &amp; markets</h2>
+        <h2>Restaurants &amp; grocers</h2>
       </div>
       <div class="chips" id="locChips">
         <button class="chip active" data-type="all" type="button">All</button>
         <button class="chip" data-type="restaurant" type="button">Restaurants</button>
         <button class="chip" data-type="grocer" type="button">Grocers</button>
-        <button class="chip" data-type="market" type="button">Farmers’ markets</button>
       </div>
     </div>
     <div class="result-count" id="locCount"></div>
     <div class="loc-grid" id="locGrid"></div>
-    <div class="loc-note">From our <a href="https://www.google.com/maps/d/viewer?mid=1xxR2HcEiPs_C84lLQk1EjnsqJNw0P7yk" target="_blank" rel="noopener">partner map</a>. National broth retailers are listed on that map and not shown here.</div>
-  </section>
-
-  <!-- MARKET SEASON -->
-  <section class="wrap" style="padding:0 28px 80px">
-    <div class="section-head">
-      <div>
-        <div class="eyebrow">Market season</div>
-        <h2>Find us at the markets</h2>
-      </div>
-    </div>
-    <div class="loc-grid" style="grid-template-columns:1fr 1fr" id="marketGrid"></div>
-    <div class="loc-note">Hours vary by season — check with the market before you go.</div>
+    <div class="loc-note">From our <a href="https://www.google.com/maps/d/viewer?mid=1xxR2HcEiPs_C84lLQk1EjnsqJNw0P7yk" target="_blank" rel="noopener">partner map</a>. National broth retailers are listed on that map and not shown here. Farmers’ markets are not listed — seasonal hours change too often to keep accurate here.</div>
   </section>
 </main>
 
@@ -76,7 +63,7 @@
 <script src="assets/data.js"></script>
 <script>
   window.TRMpageInit = function(){
-    var TYPES = { farm:'Farm pick-up', restaurant:'Restaurant', grocer:'Grocer', market:'Farmers’ market' };
+    var TYPES = { farm:'Farm pick-up', restaurant:'Restaurant', grocer:'Grocer' };
     var active = 'all';
     function render(){
       var rows = TRM.LOCATIONS.filter(function(l){ return active === 'all' || l.type === active; });
@@ -93,9 +80,6 @@
       };
     });
     render();
-    document.getElementById('marketGrid').innerHTML = TRM.MARKETS.map(function(m){
-      return '<div class="loc-card"><div class="loc-type">' + m.when + '</div><b>' + m.name + '</b><div class="town">' + m.where + ' · ' + m.time + '</div></div>';
-    }).join('');
   };
 </script>
 <script src="assets/site.js"></script>

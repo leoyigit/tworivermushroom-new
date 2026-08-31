@@ -189,21 +189,7 @@
     </div>
   </section>
 
-  <!-- 5. MUSHROOM PRODUCTS / SECONDARY SHOPPING — never in the Hero -->
-  <section id="fresh" class="home-secondary">
-    <div class="wrap section">
-      <div class="section-head">
-        <div>
-          <div class="eyebrow">Also from the farm</div>
-          <h2>Fresh gourmet mushrooms</h2>
-        </div>
-        <a class="link-arrow" href="shop.html">Shop all mushrooms
-          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
-      </div>
-      <p class="fresh-note">Local farm pick-up in Millstone, NJ — we don’t ship fresh mushrooms. Broth ships free nationwide.</p>
-      <div class="grid grid-4" id="freshGrid"></div>
-    </div>
-  </section>
+  <!-- Fresh gourmet mushrooms (home-secondary) hidden — still in Shop nav / shop.html -->
 
   <!-- 6. SUPPORTING CONTENT -->
   <!-- RECIPES TEASER -->
@@ -219,7 +205,7 @@
 
   <!-- WHERE TO BUY — one line, not a count grid -->
   <section class="wrap where-line">
-    <p>Also at restaurants, grocers, and farmers’ markets across New Jersey.
+    <p>Also at restaurants and grocers across New Jersey.
       <a class="link-arrow" href="locations.html">Where to buy
         <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
     </p>
@@ -283,7 +269,6 @@
     document.getElementById('buyBtn').onclick = function(){ TRMcart.add(state.id, 1); };
     render();
 
-    document.getElementById('freshGrid').innerHTML = TRM.PRODUCTS.filter(function(p){ return !p.soldOut; }).slice(0,4).map(TRMcard).join('');
     document.getElementById('pressRow').innerHTML = TRM.MEDIA.map(m =>
       `<div class="press-item"><div class="outlet">${m.outlet} · ${m.date}</div><p>“${m.quote}”</p></div>`).join('');
     document.getElementById('subForm').addEventListener('submit', function(e){
